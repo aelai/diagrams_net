@@ -249,7 +249,34 @@ def merge_models(input_dir: Path, output_dir: Path, output_name: str) -> Path:
 
         dv_roots = {nm: cid for nm, (cid, _a) in dv_roots_by_name.items()}
 
-        # Map only DV root ids for edge endpoint remapping.
+        # Many draw.io connectors attach to inner cells (e.g., header cells) rather than the outer DV container.
+        # Build a membership map so we can resolve any endpoint cell id back to its DV container root id.
+        member_to_dv_root: Dict[str, str] = {}
+        for _nm, _rid in dv_roots.items():
+            for _mid in _collect_subtree(_rid, children):
+                member_to_dv_root[_mid] = _rid
+
+        def resolve_to_dv_root(cell_id: Optional[str]) -> Optional[str]:
+            """Resolve an mxCell id (possibly an inner cell) to its DV container root id."""
+            if not cell_id:
+                return None
+            # Direct membership
+            if cell_id in member_to_dv_root:
+                return member_to_dv_root[cell_id]
+            # Walk up parent chain as a fallback
+            cur = cell_id
+            seen = set()
+            while cur and cur not in seen:
+                seen.add(cur)
+                cobj = by_id.get(cur)
+                if cobj is None:
+                    break
+                cur = cobj.attrib.get("parent")
+                if cur in member_to_dv_root:
+                    return member_to_dv_root[cur]
+            return None
+
+        # Map DV container root ids (per model) to merged DV container ids, used for edge endpoint remapping.
         endpoint_map: Dict[str, str] = {}
 
         # copy DV objects (dedupe by name)
@@ -316,13 +343,17 @@ def merge_models(input_dir: Path, output_dir: Path, output_name: str) -> Path:
 
                 root.append(nc)
 
-        # copy edges (relationships). Endpoints are expected to be DV container root ids.
+        # copy edges (relationships). Endpoints in draw.io often attach to inner cells, so resolve them to DV roots first.
         for eid in edges:
             e = by_id[eid]
             s_old = e.attrib.get("source")
             t_old = e.attrib.get("target")
-            s = endpoint_map.get(s_old)
-            t = endpoint_map.get(t_old)
+
+            s_root = resolve_to_dv_root(s_old)
+            t_root = resolve_to_dv_root(t_old)
+
+            s = endpoint_map.get(s_root) if s_root else None
+            t = endpoint_map.get(t_root) if t_root else None
             if not s or not t:
                 continue
 
