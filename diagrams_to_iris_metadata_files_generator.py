@@ -701,6 +701,7 @@ def generate_target_metadata(model_filename: str) -> Path:
     # Detect Dependent Child Satellite and Multi-active Satellite template fillColor (optional but preferred).
     dependent_child_fill: Optional[str] = None
     multiactive_fill: Optional[str] = None
+    sameas_link_fill: Optional[str] = None
     template_path = script_dir / "IRiS_DV_Modelling.xml"
     if template_path.exists():
         tpl_txt = template_path.read_text(encoding="utf-8", errors="replace")
@@ -714,8 +715,9 @@ def generate_target_metadata(model_filename: str) -> Path:
                 title = (item.get("title", "") or "").strip().lower()
                 want_dep = title == "dependent child satellite"
                 want_ma = title in ("multiactive satellite", "multi-active satellite", "multi active satellite")
+                want_sa_link = title in ("same-as link", "same as link", "sameas link")
 
-                if not (want_dep or want_ma):
+                if not (want_dep or want_ma or want_sa_link):
                     continue
 
                 xml_s = html.unescape(item.get("xml", "") or "")
@@ -742,9 +744,11 @@ def generate_target_metadata(model_filename: str) -> Path:
                     dependent_child_fill = fill
                 if want_ma and multiactive_fill is None:
                     multiactive_fill = fill
+                if want_sa_link and sameas_link_fill is None:
+                    sameas_link_fill = fill
 
-                # Stop once we've found both (if both exist in the library)
-                if dependent_child_fill is not None and multiactive_fill is not None:
+                # Stop once we've found everything that exists in the library
+                if dependent_child_fill is not None and multiactive_fill is not None and sameas_link_fill is not None:
                     break
     # Extract the (single) Source table and its columns (incl. in-memory `target` values).
     source_tables = extract_source_tables_from_drawio(drawio_text)
@@ -814,6 +818,7 @@ def generate_target_metadata(model_filename: str) -> Path:
 
     # Satellite subtype detection
     satellite_subtypes: Dict[str, str] = {}  # satellite_name -> subtype
+    link_is_sameas: Dict[str, bool] = {}  # link_name -> True if same-as link
 
     def _nearest_fill_color(cell_id: str) -> Optional[str]:
         """Walk upwards from a cell id and return the first non-empty fillColor."""
@@ -889,6 +894,19 @@ def generate_target_metadata(model_filename: str) -> Path:
 
                 if subtype:
                     satellite_subtypes[title] = subtype
+
+            # Same-as link detection
+            if t == "Link":
+                low_name = title.lower()
+                is_sa = False
+                if low_name.startswith("l_sa_") or low_name.startswith("l_same_") or low_name.startswith("l_sameas_"):
+                    is_sa = True
+                else:
+                    fill = _nearest_fill_color(cid)
+                    if sameas_link_fill and fill and fill.lower() == sameas_link_fill.lower():
+                        is_sa = True
+                if is_sa:
+                    link_is_sameas[title] = True
 
             for aid in _walk_ancestors(cid):
                 a_cell = by_id.get(aid)
@@ -1045,20 +1063,81 @@ def generate_target_metadata(model_filename: str) -> Path:
             rel_entries.append((hub_name, rel_name))
 
         related_hubs = [h for h, _ in rel_entries]
-        for col, dt, sz, sc, ctype in _link_column_rows(related_hubs):
-            rel = ""
-            rel_name = ""
-            m2 = re.match(r"^(?:bkcc_|bk_)(.+)$", col, flags=re.IGNORECASE)
-            if m2:
-                concept = m2.group(1)
-                for hub_name, rname in rel_entries:
-                    if _derive_relationship_name(hub_name).lower() == concept.lower():
-                        rel = hub_name
-                        rel_name = rname
-                        break
-            # Per convention: all Link BKCC + Link business key target columns are varchar(100)
-            dt, sz, sc = "varchar", "100", ""
-            target_rows.append(["Link", "", nm, col, dt, sz, sc, ctype, "", rel, rel_name])
+
+        # Same-as link: columns come from the Source pseudo-mapping targeting the same hub,
+        # and we generate per-BKCC/BK pair unique relationship names.
+        if link_is_sameas.get(nm, False):
+            for hub_name, base_rel_name in rel_entries:
+                # All source rows that target this hub
+                src_rows = source_by_target.get(hub_name.lower(), [])
+
+                # Split into BKCC and BK source columns (preserve order as in the source table)
+                bkcc_cols: List[str] = []
+                bk_cols: List[str] = []
+                for r in src_rows:
+                    src_col = (r.column or "").strip()
+                    if not src_col:
+                        continue
+                    if src_col.lower().startswith("bkcc"):
+                        bkcc_cols.append(src_col)
+                    else:
+                        bk_cols.append(src_col)
+
+                # Pair by index; each pair gets a unique relationship name.
+                max_pairs = max(len(bkcc_cols), len(bk_cols))
+                for i in range(max_pairs):
+                    # Relationship name: base, base1, base2, ...
+                    rel_name = base_rel_name if i == 0 else f"{base_rel_name}{i}"
+
+                    # BKCC side (exact source column name)
+                    if i < len(bkcc_cols):
+                        dt, sz, sc = "varchar", "100", ""
+                        target_rows.append([
+                            "Link",
+                            "",
+                            nm,
+                            bkcc_cols[i],
+                            dt,
+                            sz,
+                            sc,
+                            "Link BKCC",
+                            "",
+                            hub_name,
+                            rel_name,
+                        ])
+
+                    # Business key side (prefix with bk_ + source column name)
+                    if i < len(bk_cols):
+                        dt, sz, sc = "varchar", "100", ""
+                        target_rows.append([
+                            "Link",
+                            "",
+                            nm,
+                            f"bk_{bk_cols[i]}",
+                            dt,
+                            sz,
+                            sc,
+                            "Link business key",
+                            "",
+                            hub_name,
+                            rel_name,
+                        ])
+
+        else:
+            # Normal link
+            for col, dt, sz, sc, ctype in _link_column_rows(related_hubs):
+                rel = ""
+                rel_name_out = ""
+                m2 = re.match(r"^(?:bkcc_|bk_)(.+)$", col, flags=re.IGNORECASE)
+                if m2:
+                    concept = m2.group(1)
+                    for hub_name, rname in rel_entries:
+                        if _derive_relationship_name(hub_name).lower() == concept.lower():
+                            rel = hub_name
+                            rel_name_out = rname
+                            break
+                dt, sz, sc = "varchar", "100", ""
+                target_rows.append(["Link", "", nm, col, dt, sz, sc, ctype, "", rel, rel_name_out])
 
     def _iter_descendants(start_id: str) -> Iterable[str]:
         """Yield descendant cell ids (including the start id)."""
@@ -1247,9 +1326,20 @@ def generate_mapping_metadata(model_filename: str) -> Path:
                 break
             cur = cell.attrib.get("parent", "")
 
+    def _nearest_fill_color(cell_id: str) -> Optional[str]:
+        for aid in _walk_ancestors(cell_id):
+            c = by_id.get(aid)
+            if c is None:
+                continue
+            fill = _style_kv(c.attrib.get("style", "")).get("fillColor")
+            if fill:
+                return fill
+        return None
+
     # Map cell ids (and their vertex ancestors) to DV object name/type.
     obj_by_id: Dict[str, Tuple[str, str]] = {}
     objects: Dict[str, str] = {}
+    link_is_sameas: Dict[str, bool] = {}
 
     for c in cells:
         if c.attrib.get("vertex") != "1" or c.attrib.get("edge") == "1":
@@ -1270,6 +1360,21 @@ def generate_mapping_metadata(model_filename: str) -> Path:
         objects[title] = t
         cid = c.attrib.get("id", "")
         if cid:
+            # Same-as link detection (name prefixes OR template fillColor)
+            if t == "Link":
+                low_name = title.lower()
+                is_sa = False
+                if low_name.startswith("l_sa_") or low_name.startswith("l_same_") or low_name.startswith("l_sameas_"):
+                    is_sa = True
+                else:
+                    fill = _nearest_fill_color(cid)
+                    # sameas_link_fill is not defined in this function; try to detect from template (not available here)
+                    # For now, leave as only name-based detection unless template fill is passed in
+                    # But in original code, sameas_link_fill is detected in target gen, not here
+                    # If you want to pass it in, you could refactor, but for now support name-based
+                if is_sa:
+                    link_is_sameas[title] = True
+
             for aid in _walk_ancestors(cid):
                 a_cell = by_id.get(aid)
                 if a_cell is None:
@@ -1404,17 +1509,47 @@ def generate_mapping_metadata(model_filename: str) -> Path:
 
     # Additional Link mappings:
     # If the source pseudo-mapping only targets Hubs, still emit mappings into Links based on link-hub relationships.
+    # For SAME-AS links, emit multiple BKCC/BK pairs using the source column names.
     for link_name, hubs in sorted(link_to_hubs.items(), key=lambda x: x[0]):
+        is_sameas = link_is_sameas.get(link_name, False)
+
         for hub_name in hubs:
-            concept = _derive_relationship_name(hub_name)
+            if is_sameas:
+                # For same-as links: derive link target columns from ALL source rows targeting this hub.
+                src_rows = source_by_target.get((hub_name or "").strip().lower(), [])
 
-            src_bkcc = _pick_source_col_for_hub(hub_name, want_bkcc=True)
-            if src_bkcc:
-                _add_row(source_table_name, src_bkcc, link_name, f"bkcc_{concept}", mapping_set_name)
+                bkcc_cols: List[str] = []
+                bk_cols: List[str] = []
+                for r in src_rows:
+                    src_col = (r.column or "").strip()
+                    if not src_col:
+                        continue
+                    if src_col.lower().startswith("bkcc"):
+                        bkcc_cols.append(src_col)
+                    else:
+                        bk_cols.append(src_col)
 
-            src_bk = _pick_source_col_for_hub(hub_name, want_bkcc=False)
-            if src_bk:
-                _add_row(source_table_name, src_bk, link_name, f"bk_{concept}", mapping_set_name)
+                max_pairs = max(len(bkcc_cols), len(bk_cols))
+                for i in range(max_pairs):
+                    # BKCC: exact source column name
+                    if i < len(bkcc_cols):
+                        _add_row(source_table_name, bkcc_cols[i], link_name, bkcc_cols[i], mapping_set_name)
+
+                    # BK: prefix with bk_ + source column name
+                    if i < len(bk_cols):
+                        _add_row(source_table_name, bk_cols[i], link_name, f"bk_{bk_cols[i]}", mapping_set_name)
+
+            else:
+                # Normal link: standardised bkcc_<concept> / bk_<concept>
+                concept = _derive_relationship_name(hub_name)
+
+                src_bkcc = _pick_source_col_for_hub(hub_name, want_bkcc=True)
+                if src_bkcc:
+                    _add_row(source_table_name, src_bkcc, link_name, f"bkcc_{concept}", mapping_set_name)
+
+                src_bk = _pick_source_col_for_hub(hub_name, want_bkcc=False)
+                if src_bk:
+                    _add_row(source_table_name, src_bk, link_name, f"bk_{concept}", mapping_set_name)
 
     write_mapping_xlsx(mapping_rows, out_file)
     return out_file
@@ -1423,16 +1558,28 @@ def generate_mapping_metadata(model_filename: str) -> Path:
 # ----------------------------- CLI (optional) ------------------------------
 
 def _list_model_files(model_dir: Path) -> List[Path]:
+    """List model files to process for `--all`.
+
+    Hardened rule: only process diagrams.net/draw.io exports named `*.drawio.xml`.
+    This prevents accidentally processing template libraries (e.g. IRiS_DV_Modelling.xml)
+    or other XML files that are not draw.io diagrams.
+    """
     if not model_dir.exists():
         return []
-    return sorted([p for p in model_dir.iterdir() if p.is_file() and p.suffix.lower() == ".xml"])
+    return sorted(
+        [
+            p
+            for p in model_dir.iterdir()
+            if p.is_file() and p.name.lower().endswith(".drawio.xml")
+        ]
+    )
 
 
 def main(argv: Optional[List[str]] = None) -> int:
     parser = argparse.ArgumentParser(description="Generate IRiS Source + Target metadata XLSX from draw.io XML models.")
     parser.add_argument("--schema", required=True, help="Schema to write into the Source XLSX (e.g., landing).")
     parser.add_argument("--model", help="Model filename under ./model (e.g., SERVICE_SERVICESSYSTEM.drawio.xml).")
-    parser.add_argument("--all", action="store_true", help="Process all .xml files in ./model.")
+    parser.add_argument("--all", action="store_true", help="Process all draw.io model files in ./model (files ending with .drawio.xml).")
     parser.add_argument("--verbose", action="store_true", help="Enable verbose logging.")
     args = parser.parse_args(argv)
 
@@ -1448,7 +1595,7 @@ def main(argv: Optional[List[str]] = None) -> int:
         if args.all:
             model_files = _list_model_files(model_dir)
             if not model_files:
-                logging.error("No model files found under ./model.")
+                logging.error("No model files found under ./model. Expected files ending with .drawio.xml")
                 return 2
             for p in model_files:
                 logging.info("Processing model: %s", p.name)

@@ -1,0 +1,824 @@
+<?xml version='1.0' encoding='utf-8'?>
+<mxfile host="app.diagrams.net"><diagram name="Merged"><mxGraphModel dx="2893" dy="1054" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0"><root><mxCell id="0" /><mxCell id="1" parent="0" /><mxCell id="bre_customer_salessystem_servicessystem.drawio_1" parent="1" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=50;horizontalStack=0;rounded=1;fontSize=12;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;arcSize=4;whiteSpace=wrap;html=1;fillColor=#b1ddf0;strokeColor=#10739e;" value="&lt;span&gt;&lt;font style=&quot;font-size: 16px;&quot;&gt;&lt;b&gt;h_customer&lt;/b&gt;&lt;/font&gt;&lt;/span&gt;" vertex="1">
+          <mxGeometry height="100" width="250" x="-520.0" y="310" as="geometry" />
+        </mxCell><mxCell id="bre_customer_salessystem_servicessystem.drawio_2" parent="bre_customer_salessystem_servicessystem.drawio_1" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;spacingRight=4;fontSize=12;verticalAlign=top;resizable=0;rotatable=0;part=1;html=1;whiteSpace=wrap;" value="&lt;div&gt;bkcc&lt;/div&gt;bk_customer&lt;div&gt;&lt;br&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="50" width="250" y="50" as="geometry" />
+        </mxCell><mxCell id="bre_customer_salessystem_servicessystem.drawio_3" parent="1" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=50;horizontalStack=0;rounded=1;fontSize=12;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;arcSize=4;whiteSpace=wrap;html=1;fillColor=#ffff88;strokeColor=#36393d;" value="&lt;font style=&quot;font-size: 16px;&quot;&gt;&lt;b&gt;&lt;font&gt;s_bv_&lt;/font&gt;customer_master_name&lt;/b&gt;&lt;/font&gt;" vertex="1">
+          <mxGeometry height="90" width="400" x="-530.0" y="890" as="geometry" />
+        </mxCell><mxCell id="bre_customer_salessystem_servicessystem.drawio_4" parent="bre_customer_salessystem_servicessystem.drawio_3" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="Source_Extract_Date:&lt;span style=&quot;caret-color: rgba(0, 0, 0, 0); color: rgba(0, 0, 0, 0); font-family: monospace; font-size: 0px; white-space: nowrap;&quot;&gt;%3CmxGraphModel%3E%3Croot%3E%3CmxCell%20id%3D%220%22%2F%3E%3CmxCell%20id%3D%221%22%20parent%3D%220%22%2F%3E%3CmxCell%20id%3D%222%22%20parent%3D%221%22%20style%3D%22text%3BstrokeColor%3Dnone%3BfillColor%3Dnone%3Balign%3Dleft%3BverticalAlign%3Dtop%3BspacingLeft%3D4%3BspacingRight%3D4%3Boverflow%3Dhidden%3Brotatable%3D0%3Bpoints%3D%5B%5B0%2C0.5%5D%2C%5B1%2C0.5%5D%5D%3BportConstraint%3Deastwest%3BwhiteSpace%3Dwrap%3Bhtml%3D1%3B%22%20value%3D%22Source_Extract_Date%3A%20servicedate%22%20vertex%3D%221%22%3E%3CmxGeometry%20height%3D%2240%22%20width%3D%22400%22%20x%3D%22155%22%20y%3D%22890%22%20as%3D%22geometry%22%2F%3E%3C%2FmxCell%3E%3C%2Froot%3E%3C%2FmxGraph&lt;/span&gt;" vertex="1">
+          <mxGeometry height="40" width="400" y="50" as="geometry" />
+        </mxCell><mxCell id="bre_customer_salessystem_servicessystem.drawio_5" parent="1" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=50;horizontalStack=0;rounded=1;fontSize=12;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;arcSize=4;whiteSpace=wrap;html=1;fillColor=#ffcccc;strokeColor=#36393d;" value="&lt;b&gt;&lt;font style=&quot;font-size: 16px;&quot;&gt;&lt;font&gt;l_sa_bv_&lt;/font&gt;customer_same_as&lt;/font&gt;&lt;/b&gt;" vertex="1">
+          <mxGeometry height="90" width="320" x="-490.0" y="660" as="geometry" />
+        </mxCell><mxCell id="bre_customer_salessystem_servicessystem.drawio_6" parent="bre_customer_salessystem_servicessystem.drawio_5" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;spacingRight=4;fontSize=12;verticalAlign=top;resizable=0;rotatable=0;part=1;html=1;whiteSpace=wrap;" value="&lt;div&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="40" width="320" y="50" as="geometry" />
+        </mxCell><mxCell id="bre_customer_salessystem_servicessystem.drawio_7" edge="1" parent="bre_customer_salessystem_servicessystem.drawio_5" source="bre_customer_salessystem_servicessystem.drawio_6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" target="bre_customer_salessystem_servicessystem.drawio_6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell><mxCell id="bre_customer_salessystem_servicessystem.drawio_8" edge="1" parent="bre_customer_salessystem_servicessystem.drawio_5" source="bre_customer_salessystem_servicessystem.drawio_6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" target="bre_customer_salessystem_servicessystem.drawio_6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell><mxCell id="bre_customer_salessystem_servicessystem.drawio_9" parent="1" style="shape=table;startSize=30;container=1;collapsible=0;childLayout=tableLayout;strokeColor=#23445d;fontSize=16;rounded=1;fillColor=#bac8d3;fontStyle=1" value="bre_customer_salessystem_servicessystem" vertex="1">
+          <mxGeometry height="310" width="790" x="20.0" y="480" as="geometry" />
+        </mxCell><mxCell id="bre_customer_salessystem_servicessystem.drawio_10" parent="bre_customer_salessystem_servicessystem.drawio_9" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=16;" value="" vertex="1">
+          <mxGeometry height="40" width="790" y="30" as="geometry" />
+        </mxCell><mxCell id="bre_customer_salessystem_servicessystem.drawio_11" parent="bre_customer_salessystem_servicessystem.drawio_9" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=16;" value="" vertex="1">
+          <mxGeometry height="40" width="790" y="70" as="geometry" />
+        </mxCell><mxCell id="bre_customer_salessystem_servicessystem.drawio_12" parent="bre_customer_salessystem_servicessystem.drawio_9" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=16;" vertex="1">
+          <mxGeometry height="40" width="790" y="110" as="geometry" />
+        </mxCell><mxCell id="bre_customer_salessystem_servicessystem.drawio_13" parent="bre_customer_salessystem_servicessystem.drawio_9" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=16;" vertex="1">
+          <mxGeometry height="40" width="790" y="150" as="geometry" />
+        </mxCell><mxCell id="bre_customer_salessystem_servicessystem.drawio_14" parent="bre_customer_salessystem_servicessystem.drawio_9" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=16;" vertex="1">
+          <mxGeometry height="40" width="790" y="190" as="geometry" />
+        </mxCell><mxCell id="bre_customer_salessystem_servicessystem.drawio_15" parent="bre_customer_salessystem_servicessystem.drawio_9" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=16;" vertex="1">
+          <mxGeometry height="40" width="790" y="230" as="geometry" />
+        </mxCell><mxCell id="bre_customer_salessystem_servicessystem.drawio_16" parent="bre_customer_salessystem_servicessystem.drawio_9" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=16;" vertex="1">
+          <mxGeometry height="40" width="790" y="270" as="geometry" />
+        </mxCell><mxCell id="bre_customer_salessystem_servicessystem.drawio_17" parent="bre_customer_salessystem_servicessystem.drawio_10" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontSize=12;fontStyle=1" value="Column" vertex="1">
+          <mxGeometry height="40" width="159" as="geometry">
+            <mxRectangle height="40" width="159" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell><mxCell id="bre_customer_salessystem_servicessystem.drawio_18" parent="bre_customer_salessystem_servicessystem.drawio_10" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontSize=12;fontStyle=1" value="Datatype" vertex="1">
+          <mxGeometry height="40" width="155" x="159" as="geometry">
+            <mxRectangle height="40" width="155" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell><mxCell id="bre_customer_salessystem_servicessystem.drawio_19" parent="bre_customer_salessystem_servicessystem.drawio_10" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontSize=12;fontStyle=1" value="Size" vertex="1">
+          <mxGeometry height="40" width="158" x="314" as="geometry">
+            <mxRectangle height="40" width="158" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell><mxCell id="bre_customer_salessystem_servicessystem.drawio_20" parent="bre_customer_salessystem_servicessystem.drawio_10" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontSize=12;fontStyle=1" value="Scale" vertex="1">
+          <mxGeometry height="40" width="159" x="472" as="geometry">
+            <mxRectangle height="40" width="159" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell><mxCell id="bre_customer_salessystem_servicessystem.drawio_21" parent="bre_customer_salessystem_servicessystem.drawio_10" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontSize=12;fontStyle=1" value="Target" vertex="1">
+          <mxGeometry height="40" width="159" x="631" as="geometry">
+            <mxRectangle height="40" width="159" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell><mxCell id="bre_customer_salessystem_servicessystem.drawio_22" parent="bre_customer_salessystem_servicessystem.drawio_11" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontSize=12;" value="bkcc_sales" vertex="1">
+          <mxGeometry height="40" width="159" as="geometry">
+            <mxRectangle height="40" width="159" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell><mxCell id="bre_customer_salessystem_servicessystem.drawio_23" parent="bre_customer_salessystem_servicessystem.drawio_11" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontSize=12;" value="varchar" vertex="1">
+          <mxGeometry height="40" width="155" x="159" as="geometry">
+            <mxRectangle height="40" width="155" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell><mxCell id="bre_customer_salessystem_servicessystem.drawio_24" parent="bre_customer_salessystem_servicessystem.drawio_11" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontSize=12;" value="20" vertex="1">
+          <mxGeometry height="40" width="158" x="314" as="geometry">
+            <mxRectangle height="40" width="158" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell><mxCell id="bre_customer_salessystem_servicessystem.drawio_25" parent="bre_customer_salessystem_servicessystem.drawio_11" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontSize=12;" vertex="1">
+          <mxGeometry height="40" width="159" x="472" as="geometry">
+            <mxRectangle height="40" width="159" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell><mxCell id="bre_customer_salessystem_servicessystem.drawio_26" parent="bre_customer_salessystem_servicessystem.drawio_11" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontSize=12;" value="h_customer" vertex="1">
+          <mxGeometry height="40" width="159" x="631" as="geometry">
+            <mxRectangle height="40" width="159" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell><mxCell id="bre_customer_salessystem_servicessystem.drawio_27" parent="bre_customer_salessystem_servicessystem.drawio_12" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontSize=12;" value="customerid_sales" vertex="1">
+          <mxGeometry height="40" width="159" as="geometry">
+            <mxRectangle height="40" width="159" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell><mxCell id="bre_customer_salessystem_servicessystem.drawio_28" parent="bre_customer_salessystem_servicessystem.drawio_12" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontSize=12;" value="int" vertex="1">
+          <mxGeometry height="40" width="155" x="159" as="geometry">
+            <mxRectangle height="40" width="155" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell><mxCell id="bre_customer_salessystem_servicessystem.drawio_29" parent="bre_customer_salessystem_servicessystem.drawio_12" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontSize=12;" vertex="1">
+          <mxGeometry height="40" width="158" x="314" as="geometry">
+            <mxRectangle height="40" width="158" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell><mxCell id="bre_customer_salessystem_servicessystem.drawio_30" parent="bre_customer_salessystem_servicessystem.drawio_12" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontSize=12;" vertex="1">
+          <mxGeometry height="40" width="159" x="472" as="geometry">
+            <mxRectangle height="40" width="159" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell><mxCell id="bre_customer_salessystem_servicessystem.drawio_31" parent="bre_customer_salessystem_servicessystem.drawio_12" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontSize=12;" value="h_customer" vertex="1">
+          <mxGeometry height="40" width="159" x="631" as="geometry">
+            <mxRectangle height="40" width="159" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell><mxCell id="bre_customer_salessystem_servicessystem.drawio_32" parent="bre_customer_salessystem_servicessystem.drawio_13" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontSize=12;" value="bkcc_service" vertex="1">
+          <mxGeometry height="40" width="159" as="geometry">
+            <mxRectangle height="40" width="159" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell><mxCell id="bre_customer_salessystem_servicessystem.drawio_33" parent="bre_customer_salessystem_servicessystem.drawio_13" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontSize=12;" value="varchar" vertex="1">
+          <mxGeometry height="40" width="155" x="159" as="geometry">
+            <mxRectangle height="40" width="155" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell><mxCell id="bre_customer_salessystem_servicessystem.drawio_34" parent="bre_customer_salessystem_servicessystem.drawio_13" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontSize=12;" value="20" vertex="1">
+          <mxGeometry height="40" width="158" x="314" as="geometry">
+            <mxRectangle height="40" width="158" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell><mxCell id="bre_customer_salessystem_servicessystem.drawio_35" parent="bre_customer_salessystem_servicessystem.drawio_13" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontSize=12;" vertex="1">
+          <mxGeometry height="40" width="159" x="472" as="geometry">
+            <mxRectangle height="40" width="159" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell><mxCell id="bre_customer_salessystem_servicessystem.drawio_36" parent="bre_customer_salessystem_servicessystem.drawio_13" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontSize=12;" value="h_customer" vertex="1">
+          <mxGeometry height="40" width="159" x="631" as="geometry">
+            <mxRectangle height="40" width="159" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell><mxCell id="bre_customer_salessystem_servicessystem.drawio_37" parent="bre_customer_salessystem_servicessystem.drawio_14" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontSize=12;" value="customerid_service" vertex="1">
+          <mxGeometry height="40" width="159" as="geometry">
+            <mxRectangle height="40" width="159" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell><mxCell id="bre_customer_salessystem_servicessystem.drawio_38" parent="bre_customer_salessystem_servicessystem.drawio_14" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontSize=12;" value="int" vertex="1">
+          <mxGeometry height="40" width="155" x="159" as="geometry">
+            <mxRectangle height="40" width="155" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell><mxCell id="bre_customer_salessystem_servicessystem.drawio_39" parent="bre_customer_salessystem_servicessystem.drawio_14" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontSize=12;" vertex="1">
+          <mxGeometry height="40" width="158" x="314" as="geometry">
+            <mxRectangle height="40" width="158" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell><mxCell id="bre_customer_salessystem_servicessystem.drawio_40" parent="bre_customer_salessystem_servicessystem.drawio_14" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontSize=12;" vertex="1">
+          <mxGeometry height="40" width="159" x="472" as="geometry">
+            <mxRectangle height="40" width="159" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell><mxCell id="bre_customer_salessystem_servicessystem.drawio_41" parent="bre_customer_salessystem_servicessystem.drawio_14" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontSize=12;" value="h_customer" vertex="1">
+          <mxGeometry height="40" width="159" x="631" as="geometry">
+            <mxRectangle height="40" width="159" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell><mxCell id="bre_customer_salessystem_servicessystem.drawio_42" parent="bre_customer_salessystem_servicessystem.drawio_15" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontSize=12;" value="master_name" vertex="1">
+          <mxGeometry height="40" width="159" as="geometry">
+            <mxRectangle height="40" width="159" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell><mxCell id="bre_customer_salessystem_servicessystem.drawio_43" parent="bre_customer_salessystem_servicessystem.drawio_15" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontSize=12;" value="varchar" vertex="1">
+          <mxGeometry height="40" width="155" x="159" as="geometry">
+            <mxRectangle height="40" width="155" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell><mxCell id="bre_customer_salessystem_servicessystem.drawio_44" parent="bre_customer_salessystem_servicessystem.drawio_15" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontSize=12;" value="100" vertex="1">
+          <mxGeometry height="40" width="158" x="314" as="geometry">
+            <mxRectangle height="40" width="158" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell><mxCell id="bre_customer_salessystem_servicessystem.drawio_45" parent="bre_customer_salessystem_servicessystem.drawio_15" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontSize=12;" vertex="1">
+          <mxGeometry height="40" width="159" x="472" as="geometry">
+            <mxRectangle height="40" width="159" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell><mxCell id="bre_customer_salessystem_servicessystem.drawio_46" parent="bre_customer_salessystem_servicessystem.drawio_15" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontSize=12;" value="s_bv_customer_master_name" vertex="1">
+          <mxGeometry height="40" width="159" x="631" as="geometry">
+            <mxRectangle height="40" width="159" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell><mxCell id="bre_customer_salessystem_servicessystem.drawio_47" parent="bre_customer_salessystem_servicessystem.drawio_16" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontSize=12;" value="record_update_datetime" vertex="1">
+          <mxGeometry height="40" width="159" as="geometry">
+            <mxRectangle height="40" width="159" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell><mxCell id="bre_customer_salessystem_servicessystem.drawio_48" parent="bre_customer_salessystem_servicessystem.drawio_16" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontSize=12;" value="datetime2" vertex="1">
+          <mxGeometry height="40" width="155" x="159" as="geometry">
+            <mxRectangle height="40" width="155" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell><mxCell id="bre_customer_salessystem_servicessystem.drawio_49" parent="bre_customer_salessystem_servicessystem.drawio_16" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontSize=12;" vertex="1">
+          <mxGeometry height="40" width="158" x="314" as="geometry">
+            <mxRectangle height="40" width="158" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell><mxCell id="bre_customer_salessystem_servicessystem.drawio_50" parent="bre_customer_salessystem_servicessystem.drawio_16" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontSize=12;" vertex="1">
+          <mxGeometry height="40" width="159" x="472" as="geometry">
+            <mxRectangle height="40" width="159" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell><mxCell id="bre_customer_salessystem_servicessystem.drawio_51" parent="bre_customer_salessystem_servicessystem.drawio_16" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontSize=12;" value="s_bv_customer_master_name" vertex="1">
+          <mxGeometry height="40" width="159" x="631" as="geometry">
+            <mxRectangle height="40" width="159" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell><mxCell id="bre_customer_salessystem_servicessystem.drawio_52" edge="1" parent="1" source="bre_customer_salessystem_servicessystem.drawio_3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="bre_customer_salessystem_servicessystem.drawio_5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell><mxCell id="customer_email_salessystem.drawio_53" parent="1" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=50;horizontalStack=0;rounded=1;fontSize=12;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;arcSize=4;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;" value="&lt;b&gt;&lt;font style=&quot;font-size: 16px;&quot;&gt;&lt;font&gt;s_ma_&lt;/font&gt;customer_marketing_salessystem&lt;/font&gt;&lt;/b&gt;" vertex="1">
+          <mxGeometry height="80" width="400" x="1350.0" y="720" as="geometry" />
+        </mxCell><mxCell id="customer_email_salessystem.drawio_54" parent="customer_email_salessystem.drawio_53" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="Source_Extract_Date:&lt;span style=&quot;caret-color: rgba(0, 0, 0, 0); color: rgba(0, 0, 0, 0); font-family: monospace; font-size: 0px; white-space: nowrap;&quot;&gt;%3CmxGraphModel%3E%3Croot%3E%3CmxCell%20id%3D%220%22%2F%3E%3CmxCell%20id%3D%221%22%20parent%3D%220%22%2F%3E%3CmxCell%20id%3D%222%22%20parent%3D%221%22%20style%3D%22text%3BstrokeColor%3Dnone%3BfillColor%3Dnone%3Balign%3Dleft%3BverticalAlign%3Dtop%3BspacingLeft%3D4%3BspacingRight%3D4%3Boverflow%3Dhidden%3Brotatable%3D0%3Bpoints%3D%5B%5B0%2C0.5%5D%2C%5B1%2C0.5%5D%5D%3BportConstraint%3Deastwest%3BwhiteSpace%3Dwrap%3Bhtml%3D1%3B%22%20value%3D%22Source_Extract_Date%3A%20servicedate%22%20vertex%3D%221%22%3E%3CmxGeometry%20height%3D%2240%22%20width%3D%22400%22%20x%3D%22155%22%20y%3D%22890%22%20as%3D%22geometry%22%2F%3E%3C%2FmxCell%3E%3C%2Froot%3E%3C%2FmxGraph&lt;/span&gt;" vertex="1">
+          <mxGeometry height="30" width="400" y="50" as="geometry" />
+        </mxCell><mxCell id="customer_email_salessystem.drawio_55" edge="1" parent="customer_email_salessystem.drawio_53" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="200" y="130" as="sourcePoint" />
+            <mxPoint x="200" y="130" as="targetPoint" />
+          </mxGeometry>
+        </mxCell><mxCell id="customer_email_salessystem.drawio_56" edge="1" parent="customer_email_salessystem.drawio_53" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="200" y="130" as="sourcePoint" />
+            <mxPoint x="200" y="130" as="targetPoint" />
+          </mxGeometry>
+        </mxCell><mxCell id="customer_email_salessystem.drawio_57" parent="1" style="shape=table;startSize=30;container=1;collapsible=0;childLayout=tableLayout;strokeColor=#23445d;fontSize=16;rounded=1;fillColor=#bac8d3;fontStyle=1" value="customer_email_salessystem" vertex="1">
+          <mxGeometry height="270" width="790" x="2020.0" y="480" as="geometry" />
+        </mxCell><mxCell id="customer_email_salessystem.drawio_58" parent="customer_email_salessystem.drawio_57" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=16;" value="" vertex="1">
+          <mxGeometry height="40" width="790" y="30" as="geometry" />
+        </mxCell><mxCell id="customer_email_salessystem.drawio_59" parent="customer_email_salessystem.drawio_57" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=16;" value="" vertex="1">
+          <mxGeometry height="40" width="790" y="70" as="geometry" />
+        </mxCell><mxCell id="customer_email_salessystem.drawio_60" parent="customer_email_salessystem.drawio_57" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=16;" vertex="1">
+          <mxGeometry height="40" width="790" y="110" as="geometry" />
+        </mxCell><mxCell id="customer_email_salessystem.drawio_61" parent="customer_email_salessystem.drawio_57" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=16;" vertex="1">
+          <mxGeometry height="40" width="790" y="150" as="geometry" />
+        </mxCell><mxCell id="customer_email_salessystem.drawio_62" parent="customer_email_salessystem.drawio_57" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=16;" vertex="1">
+          <mxGeometry height="40" width="790" y="190" as="geometry" />
+        </mxCell><mxCell id="customer_email_salessystem.drawio_63" parent="customer_email_salessystem.drawio_57" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=16;" vertex="1">
+          <mxGeometry height="40" width="790" y="230" as="geometry" />
+        </mxCell><mxCell id="customer_email_salessystem.drawio_64" parent="customer_email_salessystem.drawio_58" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontSize=12;fontStyle=1" value="Column" vertex="1">
+          <mxGeometry height="40" width="159" as="geometry">
+            <mxRectangle height="40" width="159" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell><mxCell id="customer_email_salessystem.drawio_65" parent="customer_email_salessystem.drawio_58" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontSize=12;fontStyle=1" value="Datatype" vertex="1">
+          <mxGeometry height="40" width="131" x="159" as="geometry">
+            <mxRectangle height="40" width="131" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell><mxCell id="customer_email_salessystem.drawio_66" parent="customer_email_salessystem.drawio_58" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontSize=12;fontStyle=1" value="Size" vertex="1">
+          <mxGeometry height="40" width="90" x="290" as="geometry">
+            <mxRectangle height="40" width="90" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell><mxCell id="customer_email_salessystem.drawio_67" parent="customer_email_salessystem.drawio_58" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontSize=12;fontStyle=1" value="Scale" vertex="1">
+          <mxGeometry height="40" width="120" x="380" as="geometry">
+            <mxRectangle height="40" width="120" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell><mxCell id="customer_email_salessystem.drawio_68" parent="customer_email_salessystem.drawio_58" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontSize=12;fontStyle=1" value="Target" vertex="1">
+          <mxGeometry height="40" width="290" x="500" as="geometry">
+            <mxRectangle height="40" width="290" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell><mxCell id="customer_email_salessystem.drawio_69" parent="customer_email_salessystem.drawio_59" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontSize=12;" value="bkcc" vertex="1">
+          <mxGeometry height="40" width="159" as="geometry">
+            <mxRectangle height="40" width="159" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell><mxCell id="customer_email_salessystem.drawio_70" parent="customer_email_salessystem.drawio_59" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontSize=12;" value="varchar" vertex="1">
+          <mxGeometry height="40" width="131" x="159" as="geometry">
+            <mxRectangle height="40" width="131" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell><mxCell id="customer_email_salessystem.drawio_71" parent="customer_email_salessystem.drawio_59" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontSize=12;" value="20" vertex="1">
+          <mxGeometry height="40" width="90" x="290" as="geometry">
+            <mxRectangle height="40" width="90" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell><mxCell id="customer_email_salessystem.drawio_72" parent="customer_email_salessystem.drawio_59" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontSize=12;" vertex="1">
+          <mxGeometry height="40" width="120" x="380" as="geometry">
+            <mxRectangle height="40" width="120" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell><mxCell id="customer_email_salessystem.drawio_73" parent="customer_email_salessystem.drawio_59" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontSize=12;" value="h_customer" vertex="1">
+          <mxGeometry height="40" width="290" x="500" as="geometry">
+            <mxRectangle height="40" width="290" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell><mxCell id="customer_email_salessystem.drawio_74" parent="customer_email_salessystem.drawio_60" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontSize=12;" value="customerid" vertex="1">
+          <mxGeometry height="40" width="159" as="geometry">
+            <mxRectangle height="40" width="159" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell><mxCell id="customer_email_salessystem.drawio_75" parent="customer_email_salessystem.drawio_60" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontSize=12;" value="int" vertex="1">
+          <mxGeometry height="40" width="131" x="159" as="geometry">
+            <mxRectangle height="40" width="131" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell><mxCell id="customer_email_salessystem.drawio_76" parent="customer_email_salessystem.drawio_60" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontSize=12;" vertex="1">
+          <mxGeometry height="40" width="90" x="290" as="geometry">
+            <mxRectangle height="40" width="90" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell><mxCell id="customer_email_salessystem.drawio_77" parent="customer_email_salessystem.drawio_60" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontSize=12;" vertex="1">
+          <mxGeometry height="40" width="120" x="380" as="geometry">
+            <mxRectangle height="40" width="120" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell><mxCell id="customer_email_salessystem.drawio_78" parent="customer_email_salessystem.drawio_60" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontSize=12;" value="h_customer" vertex="1">
+          <mxGeometry height="40" width="290" x="500" as="geometry">
+            <mxRectangle height="40" width="290" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell><mxCell id="customer_email_salessystem.drawio_79" parent="customer_email_salessystem.drawio_61" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontSize=12;" value="name" vertex="1">
+          <mxGeometry height="40" width="159" as="geometry">
+            <mxRectangle height="40" width="159" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell><mxCell id="customer_email_salessystem.drawio_80" parent="customer_email_salessystem.drawio_61" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontSize=12;" value="varchar" vertex="1">
+          <mxGeometry height="40" width="131" x="159" as="geometry">
+            <mxRectangle height="40" width="131" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell><mxCell id="customer_email_salessystem.drawio_81" parent="customer_email_salessystem.drawio_61" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontSize=12;" value="100" vertex="1">
+          <mxGeometry height="40" width="90" x="290" as="geometry">
+            <mxRectangle height="40" width="90" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell><mxCell id="customer_email_salessystem.drawio_82" parent="customer_email_salessystem.drawio_61" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontSize=12;" vertex="1">
+          <mxGeometry height="40" width="120" x="380" as="geometry">
+            <mxRectangle height="40" width="120" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell><mxCell id="customer_email_salessystem.drawio_83" parent="customer_email_salessystem.drawio_61" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontSize=12;" value="s_ma_customer_marketing_salessystem" vertex="1">
+          <mxGeometry height="40" width="290" x="500" as="geometry">
+            <mxRectangle height="40" width="290" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell><mxCell id="customer_email_salessystem.drawio_84" parent="customer_email_salessystem.drawio_62" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontSize=12;" value="email" vertex="1">
+          <mxGeometry height="40" width="159" as="geometry">
+            <mxRectangle height="40" width="159" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell><mxCell id="customer_email_salessystem.drawio_85" parent="customer_email_salessystem.drawio_62" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontSize=12;" value="varchar" vertex="1">
+          <mxGeometry height="40" width="131" x="159" as="geometry">
+            <mxRectangle height="40" width="131" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell><mxCell id="customer_email_salessystem.drawio_86" parent="customer_email_salessystem.drawio_62" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontSize=12;" value="100" vertex="1">
+          <mxGeometry height="40" width="90" x="290" as="geometry">
+            <mxRectangle height="40" width="90" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell><mxCell id="customer_email_salessystem.drawio_87" parent="customer_email_salessystem.drawio_62" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontSize=12;" vertex="1">
+          <mxGeometry height="40" width="120" x="380" as="geometry">
+            <mxRectangle height="40" width="120" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell><mxCell id="customer_email_salessystem.drawio_88" parent="customer_email_salessystem.drawio_62" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontSize=12;" value="&lt;span style=&quot;caret-color: rgb(0, 0, 0); color: rgb(0, 0, 0); font-family: Helvetica; font-size: 12px; font-style: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: center; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(236, 236, 236); text-decoration: none; display: inline !important; float: none;&quot;&gt;s_ma_customer_marketing_salessystem&lt;/span&gt;" vertex="1">
+          <mxGeometry height="40" width="290" x="500" as="geometry">
+            <mxRectangle height="40" width="290" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell><mxCell id="customer_email_salessystem.drawio_89" parent="customer_email_salessystem.drawio_63" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontSize=12;" value="optin_marketing" vertex="1">
+          <mxGeometry height="40" width="159" as="geometry">
+            <mxRectangle height="40" width="159" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell><mxCell id="customer_email_salessystem.drawio_90" parent="customer_email_salessystem.drawio_63" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontSize=12;" value="varchar" vertex="1">
+          <mxGeometry height="40" width="131" x="159" as="geometry">
+            <mxRectangle height="40" width="131" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell><mxCell id="customer_email_salessystem.drawio_91" parent="customer_email_salessystem.drawio_63" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontSize=12;" value="10" vertex="1">
+          <mxGeometry height="40" width="90" x="290" as="geometry">
+            <mxRectangle height="40" width="90" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell><mxCell id="customer_email_salessystem.drawio_92" parent="customer_email_salessystem.drawio_63" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontSize=12;" vertex="1">
+          <mxGeometry height="40" width="120" x="380" as="geometry">
+            <mxRectangle height="40" width="120" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell><mxCell id="customer_email_salessystem.drawio_93" parent="customer_email_salessystem.drawio_63" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontSize=12;" value="&lt;span style=&quot;caret-color: rgb(0, 0, 0); color: rgb(0, 0, 0); font-family: Helvetica; font-size: 12px; font-style: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: center; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(236, 236, 236); text-decoration: none; display: inline !important; float: none;&quot;&gt;s_ma_customer_marketing_salessystem&lt;/span&gt;" vertex="1">
+          <mxGeometry height="40" width="290" x="500" as="geometry">
+            <mxRectangle height="40" width="290" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell><mxCell id="sales_salessystem.drawio_94" parent="1" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=50;horizontalStack=0;rounded=1;fontSize=12;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;arcSize=4;whiteSpace=wrap;html=1;fillColor=#b1ddf0;strokeColor=#10739e;" value="&lt;span&gt;&lt;font style=&quot;font-size: 16px;&quot;&gt;&lt;b&gt;h_dealership&lt;/b&gt;&lt;/font&gt;&lt;/span&gt;" vertex="1">
+          <mxGeometry height="100" width="250" x="4080.0" y="220" as="geometry" />
+        </mxCell><mxCell id="sales_salessystem.drawio_95" parent="sales_salessystem.drawio_94" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;spacingRight=4;fontSize=12;verticalAlign=top;resizable=0;rotatable=0;part=1;html=1;whiteSpace=wrap;" value="&lt;div&gt;bkcc&lt;/div&gt;bk_dealership&lt;div&gt;&lt;br&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="50" width="250" y="50" as="geometry" />
+        </mxCell><mxCell id="sales_salessystem.drawio_96" parent="1" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=50;horizontalStack=0;rounded=1;fontSize=12;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;arcSize=4;whiteSpace=wrap;html=1;fillColor=#b1ddf0;strokeColor=#10739e;" value="&lt;span&gt;&lt;font style=&quot;font-size: 16px;&quot;&gt;&lt;b&gt;h_salesperson&lt;/b&gt;&lt;/font&gt;&lt;/span&gt;" vertex="1">
+          <mxGeometry height="100" width="250" x="4280.0" y="50" as="geometry" />
+        </mxCell><mxCell id="sales_salessystem.drawio_97" parent="sales_salessystem.drawio_96" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;spacingRight=4;fontSize=12;verticalAlign=top;resizable=0;rotatable=0;part=1;html=1;whiteSpace=wrap;" value="&lt;div&gt;bkcc&lt;/div&gt;bk_salesperson" vertex="1">
+          <mxGeometry height="50" width="250" y="50" as="geometry" />
+        </mxCell><mxCell id="sales_salessystem.drawio_98" parent="1" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=50;horizontalStack=0;rounded=1;fontSize=12;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;arcSize=4;whiteSpace=wrap;html=1;fillColor=#ffcc99;strokeColor=#36393d;" value="&lt;b&gt;&lt;font style=&quot;font-size: 16px;&quot;&gt;s_dc_&lt;/font&gt;&lt;span style=&quot;font-family: Calibri, sans-serif; font-size: 14.666667px; text-align: start; white-space: nowrap;&quot;&gt;salesperson_sale_details&lt;/span&gt;&lt;/b&gt;" vertex="1">
+          <mxGeometry height="140" width="550" x="4630.0" y="740" as="geometry" />
+        </mxCell><mxCell id="sales_salessystem.drawio_99" parent="sales_salessystem.drawio_98" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="Dependent_Child_Attribute:&amp;nbsp;saleitemnum" vertex="1">
+          <mxGeometry height="40" width="550" y="50" as="geometry" />
+        </mxCell><mxCell id="sales_salessystem.drawio_100" parent="sales_salessystem.drawio_98" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="Source_Extract_Date:&lt;span style=&quot;caret-color: rgba(0, 0, 0, 0); color: rgba(0, 0, 0, 0); font-family: monospace; font-size: 0px; white-space: nowrap;&quot;&gt;%3CmxGraphModel%3E%3Croot%3E%3CmxCell%20id%3D%220%22%2F%3E%3CmxCell%20id%3D%221%22%20parent%3D%220%22%2F%3E%3CmxCell%20id%3D%222%22%20parent%3D%221%22%20style%3D%22text%3BstrokeColor%3Dnone%3BfillColor%3Dnone%3Balign%3Dleft%3BverticalAlign%3Dtop%3BspacingLeft%3D4%3BspacingRight%3D4%3Boverflow%3Dhidden%3Brotatable%3D0%3Bpoints%3D%5B%5B0%2C0.5%5D%2C%5B1%2C0.5%5D%5D%3BportConstraint%3Deastwest%3BwhiteSpace%3Dwrap%3Bhtml%3D1%3B%22%20value%3D%22Source_Extract_Date%3A%20servicedate%22%20vertex%3D%221%22%3E%3CmxGeometry%20height%3D%2240%22%20width%3D%22400%22%20x%3D%22155%22%20y%3D%22890%22%20as%3D%22geometry%22%2F%3E%3C%2FmxCell%3E%3C%2Froot%3E%3C%2FmxGraph&lt;/span&gt;" vertex="1">
+          <mxGeometry height="50" width="550" y="90" as="geometry" />
+        </mxCell><mxCell id="sales_salessystem.drawio_101" parent="1" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=50;horizontalStack=0;rounded=1;fontSize=16;fontStyle=1;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;arcSize=4;whiteSpace=wrap;html=1;fillColor=#ffcccc;strokeColor=#36393d;" value="&lt;span&gt;&lt;span&gt;&lt;font&gt;l_&lt;/font&gt;&lt;/span&gt;&lt;/span&gt;salesperson_dealership_customer" vertex="1">
+          <mxGeometry height="90" width="320" x="4254.0" y="550" as="geometry" />
+        </mxCell><mxCell id="sales_salessystem.drawio_102" parent="sales_salessystem.drawio_101" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;spacingRight=4;fontSize=12;verticalAlign=top;resizable=0;rotatable=0;part=1;html=1;whiteSpace=wrap;" value="&lt;div&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="40" width="320" y="50" as="geometry" />
+        </mxCell><mxCell id="sales_salessystem.drawio_103" edge="1" parent="sales_salessystem.drawio_101" source="sales_salessystem.drawio_102" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" target="sales_salessystem.drawio_102">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell><mxCell id="sales_salessystem.drawio_104" edge="1" parent="sales_salessystem.drawio_101" source="sales_salessystem.drawio_102" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" target="sales_salessystem.drawio_102">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell><mxCell id="sales_salessystem.drawio_105" parent="1" style="shape=table;startSize=30;container=1;collapsible=0;childLayout=tableLayout;strokeColor=#23445d;fontSize=16;rounded=1;fillColor=#bac8d3;fontStyle=1;align=center;" value="sales_salessystem" vertex="1">
+          <mxGeometry height="470" width="840" x="4820.0" y="80" as="geometry" />
+        </mxCell><mxCell id="sales_salessystem.drawio_106" parent="sales_salessystem.drawio_105" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=16;align=center;" value="" vertex="1">
+          <mxGeometry height="40" width="840" y="30" as="geometry" />
+        </mxCell><mxCell id="sales_salessystem.drawio_107" parent="sales_salessystem.drawio_105" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=16;align=center;" value="" vertex="1">
+          <mxGeometry height="40" width="840" y="70" as="geometry" />
+        </mxCell><mxCell id="sales_salessystem.drawio_108" parent="sales_salessystem.drawio_105" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=16;align=center;" vertex="1">
+          <mxGeometry height="40" width="840" y="110" as="geometry" />
+        </mxCell><mxCell id="sales_salessystem.drawio_109" parent="sales_salessystem.drawio_105" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=16;align=center;" vertex="1">
+          <mxGeometry height="40" width="840" y="150" as="geometry" />
+        </mxCell><mxCell id="sales_salessystem.drawio_110" parent="sales_salessystem.drawio_105" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=16;align=center;" vertex="1">
+          <mxGeometry height="40" width="840" y="190" as="geometry" />
+        </mxCell><mxCell id="sales_salessystem.drawio_111" parent="sales_salessystem.drawio_105" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=16;align=center;" vertex="1">
+          <mxGeometry height="40" width="840" y="230" as="geometry" />
+        </mxCell><mxCell id="sales_salessystem.drawio_112" parent="sales_salessystem.drawio_105" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=16;align=center;" vertex="1">
+          <mxGeometry height="40" width="840" y="270" as="geometry" />
+        </mxCell><mxCell id="sales_salessystem.drawio_113" parent="sales_salessystem.drawio_105" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=16;align=center;" vertex="1">
+          <mxGeometry height="40" width="840" y="310" as="geometry" />
+        </mxCell><mxCell id="sales_salessystem.drawio_114" parent="sales_salessystem.drawio_105" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=16;align=center;" vertex="1">
+          <mxGeometry height="40" width="840" y="350" as="geometry" />
+        </mxCell><mxCell id="sales_salessystem.drawio_115" parent="sales_salessystem.drawio_105" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=16;align=center;" vertex="1">
+          <mxGeometry height="40" width="840" y="390" as="geometry" />
+        </mxCell><mxCell id="sales_salessystem.drawio_116" parent="sales_salessystem.drawio_105" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=16;align=center;" vertex="1">
+          <mxGeometry height="40" width="840" y="430" as="geometry" />
+        </mxCell><mxCell id="sales_salessystem.drawio_117" parent="sales_salessystem.drawio_106" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontSize=16;fontStyle=1;align=center;" value="Column" vertex="1">
+          <mxGeometry height="40" width="190" as="geometry">
+            <mxRectangle height="40" width="190" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell><mxCell id="sales_salessystem.drawio_118" parent="sales_salessystem.drawio_106" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontSize=16;fontStyle=1;align=center;" value="Datatype" vertex="1">
+          <mxGeometry height="40" width="144" x="190" as="geometry">
+            <mxRectangle height="40" width="144" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell><mxCell id="sales_salessystem.drawio_119" parent="sales_salessystem.drawio_106" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontSize=16;fontStyle=1;align=center;" value="Size" vertex="1">
+          <mxGeometry height="40" width="126" x="334" as="geometry">
+            <mxRectangle height="40" width="126" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell><mxCell id="sales_salessystem.drawio_120" parent="sales_salessystem.drawio_106" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontSize=16;fontStyle=1;align=center;" value="Scale" vertex="1">
+          <mxGeometry height="40" width="140" x="460" as="geometry">
+            <mxRectangle height="40" width="140" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell><mxCell id="sales_salessystem.drawio_121" parent="sales_salessystem.drawio_106" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontSize=16;fontStyle=1;align=center;" value="Target" vertex="1">
+          <mxGeometry height="40" width="240" x="600" as="geometry">
+            <mxRectangle height="40" width="240" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell><mxCell id="sales_salessystem.drawio_122" parent="sales_salessystem.drawio_107" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontSize=16;align=center;" value="&lt;table border=&quot;0&quot; cellpadding=&quot;0&quot; cellspacing=&quot;0&quot; width=&quot;161&quot; style=&quot;caret-color: rgb(0, 0, 0); color: rgb(0, 0, 0); font-style: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; text-decoration-line: none; text-decoration-thickness: auto; text-decoration-style: solid; border-collapse: collapse; width: 121pt;&quot;&gt;&lt;colgroup&gt;&lt;col width=&quot;161&quot; style=&quot;width: 121pt;&quot;&gt;&lt;/colgroup&gt;&lt;tbody&gt;&lt;tr height=&quot;20&quot; style=&quot;height: 15pt;&quot;&gt;&lt;td height=&quot;20&quot; width=&quot;161&quot; style=&quot;padding-top: 1px; padding-right: 1px; padding-left: 1px; color: black; font-weight: 400; font-style: normal; text-decoration: none; font-family: Calibri, sans-serif; vertical-align: bottom; border: medium; white-space: nowrap; height: 15pt; width: 121pt;&quot;&gt;bkcc_customer&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;" vertex="1">
+          <mxGeometry height="40" width="190" as="geometry">
+            <mxRectangle height="40" width="190" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell><mxCell id="sales_salessystem.drawio_123" parent="sales_salessystem.drawio_107" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontSize=16;align=center;" value="&lt;table border=&quot;0&quot; cellpadding=&quot;0&quot; cellspacing=&quot;0&quot; width=&quot;72&quot; style=&quot;caret-color: rgb(0, 0, 0); color: rgb(0, 0, 0); font-style: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; text-decoration-line: none; text-decoration-thickness: auto; text-decoration-style: solid; border-collapse: collapse; width: 54pt;&quot;&gt;&lt;colgroup&gt;&lt;col width=&quot;72&quot; style=&quot;width: 54pt;&quot;&gt;&lt;/colgroup&gt;&lt;tbody&gt;&lt;tr height=&quot;20&quot; style=&quot;height: 15pt;&quot;&gt;&lt;td height=&quot;20&quot; width=&quot;72&quot; style=&quot;padding-top: 1px; padding-right: 1px; padding-left: 1px; color: black; font-weight: 400; font-style: normal; text-decoration: none; font-family: Calibri, sans-serif; vertical-align: bottom; border: medium; white-space: nowrap; height: 15pt; width: 54pt;&quot;&gt;varchar&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;" vertex="1">
+          <mxGeometry height="40" width="144" x="190" as="geometry">
+            <mxRectangle height="40" width="144" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell><mxCell id="sales_salessystem.drawio_124" parent="sales_salessystem.drawio_107" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontSize=16;align=center;" value="20" vertex="1">
+          <mxGeometry height="40" width="126" x="334" as="geometry">
+            <mxRectangle height="40" width="126" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell><mxCell id="sales_salessystem.drawio_125" parent="sales_salessystem.drawio_107" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontSize=16;align=center;" vertex="1">
+          <mxGeometry height="40" width="140" x="460" as="geometry">
+            <mxRectangle height="40" width="140" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell><mxCell id="sales_salessystem.drawio_126" parent="sales_salessystem.drawio_107" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontSize=16;align=center;" value="h_customer" vertex="1">
+          <mxGeometry height="40" width="240" x="600" as="geometry">
+            <mxRectangle height="40" width="240" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell><mxCell id="sales_salessystem.drawio_127" parent="sales_salessystem.drawio_108" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontSize=16;align=center;" value="customerid" vertex="1">
+          <mxGeometry height="40" width="190" as="geometry">
+            <mxRectangle height="40" width="190" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell><mxCell id="sales_salessystem.drawio_128" parent="sales_salessystem.drawio_108" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontSize=16;align=center;" value="int" vertex="1">
+          <mxGeometry height="40" width="144" x="190" as="geometry">
+            <mxRectangle height="40" width="144" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell><mxCell id="sales_salessystem.drawio_129" parent="sales_salessystem.drawio_108" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontSize=16;align=center;" vertex="1">
+          <mxGeometry height="40" width="126" x="334" as="geometry">
+            <mxRectangle height="40" width="126" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell><mxCell id="sales_salessystem.drawio_130" parent="sales_salessystem.drawio_108" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontSize=16;align=center;" vertex="1">
+          <mxGeometry height="40" width="140" x="460" as="geometry">
+            <mxRectangle height="40" width="140" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell><mxCell id="sales_salessystem.drawio_131" parent="sales_salessystem.drawio_108" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontSize=16;align=center;" value="h_customer" vertex="1">
+          <mxGeometry height="40" width="240" x="600" as="geometry">
+            <mxRectangle height="40" width="240" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell><mxCell id="sales_salessystem.drawio_132" parent="sales_salessystem.drawio_109" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontSize=16;align=center;" value="&lt;table border=&quot;0&quot; cellpadding=&quot;0&quot; cellspacing=&quot;0&quot; width=&quot;161&quot; style=&quot;caret-color: rgb(0, 0, 0); color: rgb(0, 0, 0); font-style: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; text-decoration-line: none; text-decoration-thickness: auto; text-decoration-style: solid; border-collapse: collapse; width: 121pt;&quot;&gt;&lt;colgroup&gt;&lt;col width=&quot;161&quot; style=&quot;width: 121pt;&quot;&gt;&lt;/colgroup&gt;&lt;tbody&gt;&lt;tr height=&quot;20&quot; style=&quot;height: 15pt;&quot;&gt;&lt;td height=&quot;20&quot; width=&quot;161&quot; style=&quot;padding-top: 1px; padding-right: 1px; padding-left: 1px; color: black; font-weight: 400; font-style: normal; text-decoration: none; font-family: Calibri, sans-serif; vertical-align: bottom; border: medium; white-space: nowrap; height: 15pt; width: 121pt;&quot;&gt;bkcc_dealership&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;" vertex="1">
+          <mxGeometry height="40" width="190" as="geometry">
+            <mxRectangle height="40" width="190" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell><mxCell id="sales_salessystem.drawio_133" parent="sales_salessystem.drawio_109" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontSize=16;align=center;" value="&lt;table border=&quot;0&quot; cellpadding=&quot;0&quot; cellspacing=&quot;0&quot; width=&quot;72&quot; style=&quot;caret-color: rgb(0, 0, 0); color: rgb(0, 0, 0); font-style: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; text-decoration-line: none; text-decoration-thickness: auto; text-decoration-style: solid; border-collapse: collapse; width: 54pt;&quot;&gt;&lt;colgroup&gt;&lt;col width=&quot;72&quot; style=&quot;width: 54pt;&quot;&gt;&lt;/colgroup&gt;&lt;tbody&gt;&lt;tr height=&quot;20&quot; style=&quot;height: 15pt;&quot;&gt;&lt;td height=&quot;20&quot; width=&quot;72&quot; style=&quot;padding-top: 1px; padding-right: 1px; padding-left: 1px; color: black; font-weight: 400; font-style: normal; text-decoration: none; font-family: Calibri, sans-serif; vertical-align: bottom; border: medium; white-space: nowrap; height: 15pt; width: 54pt;&quot;&gt;varchar&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;" vertex="1">
+          <mxGeometry height="40" width="144" x="190" as="geometry">
+            <mxRectangle height="40" width="144" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell><mxCell id="sales_salessystem.drawio_134" parent="sales_salessystem.drawio_109" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontSize=16;align=center;" value="20" vertex="1">
+          <mxGeometry height="40" width="126" x="334" as="geometry">
+            <mxRectangle height="40" width="126" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell><mxCell id="sales_salessystem.drawio_135" parent="sales_salessystem.drawio_109" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontSize=16;align=center;" vertex="1">
+          <mxGeometry height="40" width="140" x="460" as="geometry">
+            <mxRectangle height="40" width="140" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell><mxCell id="sales_salessystem.drawio_136" parent="sales_salessystem.drawio_109" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontSize=16;align=center;" value="h_dealership" vertex="1">
+          <mxGeometry height="40" width="240" x="600" as="geometry">
+            <mxRectangle height="40" width="240" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell><mxCell id="sales_salessystem.drawio_137" parent="sales_salessystem.drawio_110" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontSize=16;align=center;" value="&lt;table border=&quot;0&quot; cellpadding=&quot;0&quot; cellspacing=&quot;0&quot; width=&quot;161&quot; style=&quot;caret-color: rgb(0, 0, 0); color: rgb(0, 0, 0); font-style: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; text-decoration-line: none; text-decoration-thickness: auto; text-decoration-style: solid; border-collapse: collapse; width: 121pt;&quot;&gt;&lt;colgroup&gt;&lt;col width=&quot;161&quot; style=&quot;width: 121pt;&quot;&gt;&lt;/colgroup&gt;&lt;tbody&gt;&lt;tr height=&quot;20&quot; style=&quot;height: 15pt;&quot;&gt;&lt;td height=&quot;20&quot; width=&quot;161&quot; style=&quot;padding-top: 1px; padding-right: 1px; padding-left: 1px; color: black; font-weight: 400; font-style: normal; text-decoration: none; font-family: Calibri, sans-serif; vertical-align: bottom; border: medium; white-space: nowrap; height: 15pt; width: 121pt;&quot;&gt;dealershipid&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;" vertex="1">
+          <mxGeometry height="40" width="190" as="geometry">
+            <mxRectangle height="40" width="190" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell><mxCell id="sales_salessystem.drawio_138" parent="sales_salessystem.drawio_110" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontSize=16;align=center;" value="int" vertex="1">
+          <mxGeometry height="40" width="144" x="190" as="geometry">
+            <mxRectangle height="40" width="144" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell><mxCell id="sales_salessystem.drawio_139" parent="sales_salessystem.drawio_110" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontSize=16;align=center;" vertex="1">
+          <mxGeometry height="40" width="126" x="334" as="geometry">
+            <mxRectangle height="40" width="126" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell><mxCell id="sales_salessystem.drawio_140" parent="sales_salessystem.drawio_110" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontSize=16;align=center;" vertex="1">
+          <mxGeometry height="40" width="140" x="460" as="geometry">
+            <mxRectangle height="40" width="140" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell><mxCell id="sales_salessystem.drawio_141" parent="sales_salessystem.drawio_110" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontSize=16;align=center;" value="h_dealership" vertex="1">
+          <mxGeometry height="40" width="240" x="600" as="geometry">
+            <mxRectangle height="40" width="240" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell><mxCell id="sales_salessystem.drawio_142" parent="sales_salessystem.drawio_111" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontSize=16;align=center;" value="&lt;table border=&quot;0&quot; cellpadding=&quot;0&quot; cellspacing=&quot;0&quot; width=&quot;161&quot; style=&quot;caret-color: rgb(0, 0, 0); color: rgb(0, 0, 0); font-style: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; text-decoration-line: none; text-decoration-thickness: auto; text-decoration-style: solid; border-collapse: collapse; width: 121pt;&quot;&gt;&lt;colgroup&gt;&lt;col width=&quot;161&quot; style=&quot;width: 121pt;&quot;&gt;&lt;/colgroup&gt;&lt;tbody&gt;&lt;tr height=&quot;20&quot; style=&quot;height: 15pt;&quot;&gt;&lt;td height=&quot;20&quot; width=&quot;161&quot; style=&quot;padding-top: 1px; padding-right: 1px; padding-left: 1px; color: black; font-weight: 400; font-style: normal; text-decoration: none; font-family: Calibri, sans-serif; vertical-align: bottom; border: medium; white-space: nowrap; height: 15pt; width: 121pt;&quot;&gt;bkcc_salesperson&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;" vertex="1">
+          <mxGeometry height="40" width="190" as="geometry">
+            <mxRectangle height="40" width="190" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell><mxCell id="sales_salessystem.drawio_143" parent="sales_salessystem.drawio_111" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontSize=16;align=center;" value="&lt;table border=&quot;0&quot; cellpadding=&quot;0&quot; cellspacing=&quot;0&quot; width=&quot;72&quot; style=&quot;caret-color: rgb(0, 0, 0); color: rgb(0, 0, 0); font-style: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; text-decoration-line: none; text-decoration-thickness: auto; text-decoration-style: solid; border-collapse: collapse; width: 54pt;&quot;&gt;&lt;colgroup&gt;&lt;col width=&quot;72&quot; style=&quot;width: 54pt;&quot;&gt;&lt;/colgroup&gt;&lt;tbody&gt;&lt;tr height=&quot;20&quot; style=&quot;height: 15pt;&quot;&gt;&lt;td height=&quot;20&quot; width=&quot;72&quot; style=&quot;padding-top: 1px; padding-right: 1px; padding-left: 1px; color: black; font-weight: 400; font-style: normal; text-decoration: none; font-family: Calibri, sans-serif; vertical-align: bottom; border: medium; white-space: nowrap; height: 15pt; width: 54pt;&quot;&gt;varchar&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;" vertex="1">
+          <mxGeometry height="40" width="144" x="190" as="geometry">
+            <mxRectangle height="40" width="144" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell><mxCell id="sales_salessystem.drawio_144" parent="sales_salessystem.drawio_111" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontSize=16;align=center;" value="20" vertex="1">
+          <mxGeometry height="40" width="126" x="334" as="geometry">
+            <mxRectangle height="40" width="126" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell><mxCell id="sales_salessystem.drawio_145" parent="sales_salessystem.drawio_111" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontSize=16;align=center;" vertex="1">
+          <mxGeometry height="40" width="140" x="460" as="geometry">
+            <mxRectangle height="40" width="140" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell><mxCell id="sales_salessystem.drawio_146" parent="sales_salessystem.drawio_111" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontSize=16;align=center;" value="h_salesperson" vertex="1">
+          <mxGeometry height="40" width="240" x="600" as="geometry">
+            <mxRectangle height="40" width="240" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell><mxCell id="sales_salessystem.drawio_147" parent="sales_salessystem.drawio_112" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontSize=16;align=center;" value="&lt;table border=&quot;0&quot; cellpadding=&quot;0&quot; cellspacing=&quot;0&quot; width=&quot;161&quot; style=&quot;caret-color: rgb(0, 0, 0); color: rgb(0, 0, 0); font-style: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; text-decoration-line: none; text-decoration-thickness: auto; text-decoration-style: solid; border-collapse: collapse; width: 121pt;&quot;&gt;&lt;colgroup&gt;&lt;col width=&quot;161&quot; style=&quot;width: 121pt;&quot;&gt;&lt;/colgroup&gt;&lt;tbody&gt;&lt;tr height=&quot;20&quot; style=&quot;height: 15pt;&quot;&gt;&lt;td height=&quot;20&quot; width=&quot;161&quot; style=&quot;padding-top: 1px; padding-right: 1px; padding-left: 1px; color: black; font-weight: 400; font-style: normal; text-decoration: none; font-family: Calibri, sans-serif; vertical-align: bottom; border: medium; white-space: nowrap; height: 15pt; width: 121pt;&quot;&gt;salespersonid&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;" vertex="1">
+          <mxGeometry height="40" width="190" as="geometry">
+            <mxRectangle height="40" width="190" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell><mxCell id="sales_salessystem.drawio_148" parent="sales_salessystem.drawio_112" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontSize=16;align=center;" value="int" vertex="1">
+          <mxGeometry height="40" width="144" x="190" as="geometry">
+            <mxRectangle height="40" width="144" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell><mxCell id="sales_salessystem.drawio_149" parent="sales_salessystem.drawio_112" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontSize=16;align=center;" vertex="1">
+          <mxGeometry height="40" width="126" x="334" as="geometry">
+            <mxRectangle height="40" width="126" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell><mxCell id="sales_salessystem.drawio_150" parent="sales_salessystem.drawio_112" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontSize=16;align=center;" vertex="1">
+          <mxGeometry height="40" width="140" x="460" as="geometry">
+            <mxRectangle height="40" width="140" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell><mxCell id="sales_salessystem.drawio_151" parent="sales_salessystem.drawio_112" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontSize=16;align=center;" value="h_salesperson" vertex="1">
+          <mxGeometry height="40" width="240" x="600" as="geometry">
+            <mxRectangle height="40" width="240" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell><mxCell id="sales_salessystem.drawio_152" parent="sales_salessystem.drawio_113" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontSize=16;align=center;" value="&lt;table border=&quot;0&quot; cellpadding=&quot;0&quot; cellspacing=&quot;0&quot; width=&quot;161&quot; style=&quot;caret-color: rgb(0, 0, 0); color: rgb(0, 0, 0); font-style: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; text-decoration-line: none; text-decoration-thickness: auto; text-decoration-style: solid; border-collapse: collapse; width: 121pt;&quot;&gt;&lt;colgroup&gt;&lt;col width=&quot;161&quot; style=&quot;width: 121pt;&quot;&gt;&lt;/colgroup&gt;&lt;tbody&gt;&lt;tr height=&quot;20&quot; style=&quot;height: 15pt;&quot;&gt;&lt;td height=&quot;20&quot; width=&quot;161&quot; style=&quot;padding-top: 1px; padding-right: 1px; padding-left: 1px; color: black; font-weight: 400; font-style: normal; text-decoration: none; font-family: Calibri, sans-serif; vertical-align: bottom; border: medium; white-space: nowrap; height: 15pt; width: 121pt;&quot;&gt;saleitemnum&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;" vertex="1">
+          <mxGeometry height="40" width="190" as="geometry">
+            <mxRectangle height="40" width="190" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell><mxCell id="sales_salessystem.drawio_153" parent="sales_salessystem.drawio_113" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontSize=16;align=center;" value="int" vertex="1">
+          <mxGeometry height="40" width="144" x="190" as="geometry">
+            <mxRectangle height="40" width="144" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell><mxCell id="sales_salessystem.drawio_154" parent="sales_salessystem.drawio_113" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontSize=16;align=center;" vertex="1">
+          <mxGeometry height="40" width="126" x="334" as="geometry">
+            <mxRectangle height="40" width="126" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell><mxCell id="sales_salessystem.drawio_155" parent="sales_salessystem.drawio_113" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontSize=16;align=center;" vertex="1">
+          <mxGeometry height="40" width="140" x="460" as="geometry">
+            <mxRectangle height="40" width="140" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell><mxCell id="sales_salessystem.drawio_156" parent="sales_salessystem.drawio_113" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontSize=16;align=center;" value="s_dc_salesperson_sale_details" vertex="1">
+          <mxGeometry height="40" width="240" x="600" as="geometry">
+            <mxRectangle height="40" width="240" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell><mxCell id="sales_salessystem.drawio_157" parent="sales_salessystem.drawio_114" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontSize=16;align=center;" value="&lt;table border=&quot;0&quot; cellpadding=&quot;0&quot; cellspacing=&quot;0&quot; width=&quot;161&quot; style=&quot;caret-color: rgb(0, 0, 0); color: rgb(0, 0, 0); font-style: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; text-decoration-line: none; text-decoration-thickness: auto; text-decoration-style: solid; border-collapse: collapse; width: 121pt;&quot;&gt;&lt;colgroup&gt;&lt;col width=&quot;161&quot; style=&quot;width: 121pt;&quot;&gt;&lt;/colgroup&gt;&lt;tbody&gt;&lt;tr height=&quot;20&quot; style=&quot;height: 15pt;&quot;&gt;&lt;td height=&quot;20&quot; width=&quot;161&quot; style=&quot;padding-top: 1px; padding-right: 1px; padding-left: 1px; color: black; font-weight: 400; font-style: normal; text-decoration: none; font-family: Calibri, sans-serif; vertical-align: bottom; border: medium; white-space: nowrap; height: 15pt; width: 121pt;&quot;&gt;salesprice&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;" vertex="1">
+          <mxGeometry height="40" width="190" as="geometry">
+            <mxRectangle height="40" width="190" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell><mxCell id="sales_salessystem.drawio_158" parent="sales_salessystem.drawio_114" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontSize=16;align=center;" value="&lt;span style=&quot;caret-color: rgb(0, 0, 0); color: rgb(0, 0, 0); font-family: Helvetica; font-style: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(236, 236, 236); text-decoration: none; float: none; display: inline !important;&quot;&gt;decimal&lt;/span&gt;" vertex="1">
+          <mxGeometry height="40" width="144" x="190" as="geometry">
+            <mxRectangle height="40" width="144" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell><mxCell id="sales_salessystem.drawio_159" parent="sales_salessystem.drawio_114" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontSize=16;align=center;" value="18" vertex="1">
+          <mxGeometry height="40" width="126" x="334" as="geometry">
+            <mxRectangle height="40" width="126" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell><mxCell id="sales_salessystem.drawio_160" parent="sales_salessystem.drawio_114" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontSize=16;align=center;" value="8" vertex="1">
+          <mxGeometry height="40" width="140" x="460" as="geometry">
+            <mxRectangle height="40" width="140" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell><mxCell id="sales_salessystem.drawio_161" parent="sales_salessystem.drawio_114" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontSize=16;align=center;" value="s_dc_salesperson_sale_details" vertex="1">
+          <mxGeometry height="40" width="240" x="600" as="geometry">
+            <mxRectangle height="40" width="240" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell><mxCell id="sales_salessystem.drawio_162" parent="sales_salessystem.drawio_115" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontSize=16;align=center;" value="&lt;table border=&quot;0&quot; cellpadding=&quot;0&quot; cellspacing=&quot;0&quot; width=&quot;161&quot; style=&quot;caret-color: rgb(0, 0, 0); color: rgb(0, 0, 0); font-style: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; text-decoration-line: none; text-decoration-thickness: auto; text-decoration-style: solid; border-collapse: collapse; width: 121pt;&quot;&gt;&lt;colgroup&gt;&lt;col width=&quot;161&quot; style=&quot;width: 121pt;&quot;&gt;&lt;/colgroup&gt;&lt;tbody&gt;&lt;tr height=&quot;20&quot; style=&quot;height: 15pt;&quot;&gt;&lt;td height=&quot;20&quot; width=&quot;161&quot; style=&quot;padding-top: 1px; padding-right: 1px; padding-left: 1px; color: black; font-weight: 400; font-style: normal; text-decoration: none; font-family: Calibri, sans-serif; vertical-align: bottom; border: medium; white-space: nowrap; height: 15pt; width: 121pt;&quot;&gt;saledate&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;" vertex="1">
+          <mxGeometry height="40" width="190" as="geometry">
+            <mxRectangle height="40" width="190" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell><mxCell id="sales_salessystem.drawio_163" parent="sales_salessystem.drawio_115" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontSize=16;align=center;" value="&lt;span style=&quot;caret-color: rgb(0, 0, 0); color: rgb(0, 0, 0); font-family: Helvetica; font-style: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(236, 236, 236); text-decoration: none; float: none; display: inline !important;&quot;&gt;datetime2&lt;/span&gt;" vertex="1">
+          <mxGeometry height="40" width="144" x="190" as="geometry">
+            <mxRectangle height="40" width="144" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell><mxCell id="sales_salessystem.drawio_164" parent="sales_salessystem.drawio_115" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontSize=16;align=center;" vertex="1">
+          <mxGeometry height="40" width="126" x="334" as="geometry">
+            <mxRectangle height="40" width="126" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell><mxCell id="sales_salessystem.drawio_165" parent="sales_salessystem.drawio_115" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontSize=16;align=center;" vertex="1">
+          <mxGeometry height="40" width="140" x="460" as="geometry">
+            <mxRectangle height="40" width="140" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell><mxCell id="sales_salessystem.drawio_166" parent="sales_salessystem.drawio_115" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontSize=16;align=center;" value="s_dc_salesperson_sale_details" vertex="1">
+          <mxGeometry height="40" width="240" x="600" as="geometry">
+            <mxRectangle height="40" width="240" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell><mxCell id="sales_salessystem.drawio_167" parent="sales_salessystem.drawio_116" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontSize=16;align=center;" value="&lt;table border=&quot;0&quot; cellpadding=&quot;0&quot; cellspacing=&quot;0&quot; width=&quot;161&quot; style=&quot;caret-color: rgb(0, 0, 0); color: rgb(0, 0, 0); font-style: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; text-decoration-line: none; text-decoration-thickness: auto; text-decoration-style: solid; border-collapse: collapse; width: 121pt;&quot;&gt;&lt;colgroup&gt;&lt;col width=&quot;161&quot; style=&quot;width: 121pt;&quot;&gt;&lt;/colgroup&gt;&lt;tbody&gt;&lt;tr height=&quot;20&quot; style=&quot;height: 15pt;&quot;&gt;&lt;td height=&quot;20&quot; width=&quot;161&quot; style=&quot;padding-top: 1px; padding-right: 1px; padding-left: 1px; color: black; font-weight: 400; font-style: normal; text-decoration: none; font-family: Calibri, sans-serif; vertical-align: bottom; border: medium; white-space: nowrap; height: 15pt; width: 121pt;&quot;&gt;record_update_datetime&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;" vertex="1">
+          <mxGeometry height="40" width="190" as="geometry">
+            <mxRectangle height="40" width="190" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell><mxCell id="sales_salessystem.drawio_168" parent="sales_salessystem.drawio_116" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontSize=16;align=center;" value="&lt;span style=&quot;caret-color: rgb(0, 0, 0); color: rgb(0, 0, 0); font-family: Helvetica; font-style: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(236, 236, 236); text-decoration: none; float: none; display: inline !important;&quot;&gt;datetime2&lt;/span&gt;" vertex="1">
+          <mxGeometry height="40" width="144" x="190" as="geometry">
+            <mxRectangle height="40" width="144" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell><mxCell id="sales_salessystem.drawio_169" parent="sales_salessystem.drawio_116" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontSize=16;align=center;" vertex="1">
+          <mxGeometry height="40" width="126" x="334" as="geometry">
+            <mxRectangle height="40" width="126" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell><mxCell id="sales_salessystem.drawio_170" parent="sales_salessystem.drawio_116" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontSize=16;align=center;" vertex="1">
+          <mxGeometry height="40" width="140" x="460" as="geometry">
+            <mxRectangle height="40" width="140" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell><mxCell id="sales_salessystem.drawio_171" parent="sales_salessystem.drawio_116" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontSize=16;align=center;" value="s_dc_salesperson_sale_details" vertex="1">
+          <mxGeometry height="40" width="240" x="600" as="geometry">
+            <mxRectangle height="40" width="240" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell><mxCell id="sales_salessystem.drawio_172" edge="1" parent="1" source="sales_salessystem.drawio_101" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="sales_salessystem.drawio_98">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell><mxCell id="sales_salessystem.drawio_173" edge="1" parent="1" source="sales_salessystem.drawio_101" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="sales_salessystem.drawio_96">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell><mxCell id="sales_salessystem.drawio_174" edge="1" parent="1" source="sales_salessystem.drawio_101" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="bre_customer_salessystem_servicessystem.drawio_1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell><mxCell id="sales_salessystem.drawio_175" edge="1" parent="1" source="sales_salessystem.drawio_101" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="sales_salessystem.drawio_94">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell><mxCell id="service_servicessystem.drawio_176" parent="1" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=50;horizontalStack=0;rounded=1;fontSize=12;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;arcSize=4;whiteSpace=wrap;html=1;fillColor=#b1ddf0;strokeColor=#10739e;" value="&lt;span&gt;&lt;font style=&quot;font-size: 16px;&quot;&gt;&lt;b&gt;h_service&lt;/b&gt;&lt;/font&gt;&lt;/span&gt;" vertex="1">
+          <mxGeometry height="90" width="250" x="6600.0" y="230" as="geometry" />
+        </mxCell><mxCell id="service_servicessystem.drawio_177" parent="service_servicessystem.drawio_176" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;spacingRight=4;fontSize=12;verticalAlign=top;resizable=0;rotatable=0;part=1;html=1;whiteSpace=wrap;" value="&lt;div&gt;bkcc&lt;/div&gt;bk_service&lt;div&gt;&lt;br&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="40" width="250" y="50" as="geometry" />
+        </mxCell><mxCell id="service_servicessystem.drawio_178" parent="1" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=50;horizontalStack=0;rounded=1;fontSize=12;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;arcSize=4;whiteSpace=wrap;html=1;fillColor=#b1ddf0;strokeColor=#10739e;" value="&lt;span&gt;&lt;font style=&quot;font-size: 16px;&quot;&gt;&lt;b&gt;h_registration&lt;/b&gt;&lt;/font&gt;&lt;/span&gt;" vertex="1">
+          <mxGeometry height="90" width="250" x="6030.0" y="260" as="geometry" />
+        </mxCell><mxCell id="service_servicessystem.drawio_179" parent="service_servicessystem.drawio_178" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;spacingRight=4;fontSize=12;verticalAlign=top;resizable=0;rotatable=0;part=1;html=1;whiteSpace=wrap;" value="&lt;div&gt;bkcc&lt;/div&gt;bk_registration&lt;div&gt;&lt;br&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="40" width="250" y="50" as="geometry" />
+        </mxCell><mxCell id="service_servicessystem.drawio_180" parent="1" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontSize=12;fontStyle=0" value="&lt;span style=&quot;caret-color: rgb(0, 0, 0); color: rgb(0, 0, 0); font-family: Helvetica; font-style: normal; font-variant-caps: normal; letter-spacing: normal; orphans: 2; text-align: center; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; text-decoration-line: none; text-decoration-thickness: auto; text-decoration-style: solid;&quot;&gt;s_service_cost_service_servicessystem&lt;/span&gt;" vertex="1">
+          <mxGeometry height="40" width="159" x="6631.0" as="geometry">
+            <mxRectangle height="40" width="159" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell><mxCell id="service_servicessystem.drawio_181" parent="1" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=50;horizontalStack=0;rounded=1;fontSize=12;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;arcSize=4;whiteSpace=wrap;html=1;fillColor=#ffcccc;strokeColor=#36393d;" value="&lt;span&gt;&lt;b&gt;&lt;font style=&quot;font-size: 16px;&quot;&gt;l_customer_registration_service&lt;/font&gt;&lt;/b&gt;&lt;/span&gt;" vertex="1">
+          <mxGeometry height="90" width="320" x="6235.0" y="550" as="geometry" />
+        </mxCell><mxCell id="service_servicessystem.drawio_182" parent="service_servicessystem.drawio_181" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;spacingRight=4;fontSize=12;verticalAlign=top;resizable=0;rotatable=0;part=1;html=1;whiteSpace=wrap;" value="&lt;div&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="40" width="320" y="50" as="geometry" />
+        </mxCell><mxCell id="service_servicessystem.drawio_183" edge="1" parent="service_servicessystem.drawio_181" source="service_servicessystem.drawio_182" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" target="service_servicessystem.drawio_182">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell><mxCell id="service_servicessystem.drawio_184" edge="1" parent="service_servicessystem.drawio_181" source="service_servicessystem.drawio_182" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" target="service_servicessystem.drawio_182">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell><mxCell id="service_servicessystem.drawio_185" parent="1" style="shape=table;startSize=30;container=1;collapsible=0;childLayout=tableLayout;strokeColor=#23445d;fontSize=16;rounded=1;fillColor=#bac8d3;fontStyle=1" value="service_servicessystem" vertex="1">
+          <mxGeometry height="390" width="790" x="7120.0" y="90" as="geometry" />
+        </mxCell><mxCell id="service_servicessystem.drawio_186" parent="service_servicessystem.drawio_185" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=16;" value="" vertex="1">
+          <mxGeometry height="40" width="790" y="30" as="geometry" />
+        </mxCell><mxCell id="service_servicessystem.drawio_187" parent="service_servicessystem.drawio_185" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=16;" value="" vertex="1">
+          <mxGeometry height="40" width="790" y="70" as="geometry" />
+        </mxCell><mxCell id="service_servicessystem.drawio_188" parent="service_servicessystem.drawio_185" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=16;" value="" vertex="1">
+          <mxGeometry height="40" width="790" y="110" as="geometry" />
+        </mxCell><mxCell id="service_servicessystem.drawio_189" parent="service_servicessystem.drawio_185" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=16;" vertex="1">
+          <mxGeometry height="40" width="790" y="150" as="geometry" />
+        </mxCell><mxCell id="service_servicessystem.drawio_190" parent="service_servicessystem.drawio_185" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=16;" vertex="1">
+          <mxGeometry height="40" width="790" y="190" as="geometry" />
+        </mxCell><mxCell id="service_servicessystem.drawio_191" parent="service_servicessystem.drawio_185" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=16;" vertex="1">
+          <mxGeometry height="40" width="790" y="230" as="geometry" />
+        </mxCell><mxCell id="service_servicessystem.drawio_192" parent="service_servicessystem.drawio_185" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=16;" vertex="1">
+          <mxGeometry height="40" width="790" y="270" as="geometry" />
+        </mxCell><mxCell id="service_servicessystem.drawio_193" parent="service_servicessystem.drawio_185" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=16;" vertex="1">
+          <mxGeometry height="40" width="790" y="310" as="geometry" />
+        </mxCell><mxCell id="service_servicessystem.drawio_194" parent="service_servicessystem.drawio_185" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=16;" vertex="1">
+          <mxGeometry height="40" width="790" y="350" as="geometry" />
+        </mxCell><mxCell id="service_servicessystem.drawio_195" parent="service_servicessystem.drawio_186" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontSize=12;fontStyle=1" value="Column" vertex="1">
+          <mxGeometry height="40" width="159" as="geometry">
+            <mxRectangle height="40" width="159" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell><mxCell id="service_servicessystem.drawio_196" parent="service_servicessystem.drawio_186" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontSize=12;fontStyle=1" value="Datatype" vertex="1">
+          <mxGeometry height="40" width="155" x="159" as="geometry">
+            <mxRectangle height="40" width="155" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell><mxCell id="service_servicessystem.drawio_197" parent="service_servicessystem.drawio_186" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontSize=12;fontStyle=1" value="Size" vertex="1">
+          <mxGeometry height="40" width="158" x="314" as="geometry">
+            <mxRectangle height="40" width="158" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell><mxCell id="service_servicessystem.drawio_198" parent="service_servicessystem.drawio_186" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontSize=12;fontStyle=1" value="Scale" vertex="1">
+          <mxGeometry height="40" width="159" x="472" as="geometry">
+            <mxRectangle height="40" width="159" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell><mxCell id="service_servicessystem.drawio_199" parent="service_servicessystem.drawio_186" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontSize=12;fontStyle=1" value="Target" vertex="1">
+          <mxGeometry height="40" width="159" x="631" as="geometry">
+            <mxRectangle height="40" width="159" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell><mxCell id="service_servicessystem.drawio_200" parent="service_servicessystem.drawio_187" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontSize=12;" value="bkcc_service" vertex="1">
+          <mxGeometry height="40" width="159" as="geometry">
+            <mxRectangle height="40" width="159" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell><mxCell id="service_servicessystem.drawio_201" parent="service_servicessystem.drawio_187" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontSize=12;" value="varchar" vertex="1">
+          <mxGeometry height="40" width="155" x="159" as="geometry">
+            <mxRectangle height="40" width="155" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell><mxCell id="service_servicessystem.drawio_202" parent="service_servicessystem.drawio_187" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontSize=12;" value="20" vertex="1">
+          <mxGeometry height="40" width="158" x="314" as="geometry">
+            <mxRectangle height="40" width="158" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell><mxCell id="service_servicessystem.drawio_203" parent="service_servicessystem.drawio_187" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontSize=12;" vertex="1">
+          <mxGeometry height="40" width="159" x="472" as="geometry">
+            <mxRectangle height="40" width="159" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell><mxCell id="service_servicessystem.drawio_204" parent="service_servicessystem.drawio_187" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontSize=12;" value="h_service" vertex="1">
+          <mxGeometry height="40" width="159" x="631" as="geometry">
+            <mxRectangle height="40" width="159" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell><mxCell id="service_servicessystem.drawio_205" parent="service_servicessystem.drawio_188" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontSize=12;" value="serviceid" vertex="1">
+          <mxGeometry height="40" width="159" as="geometry">
+            <mxRectangle height="40" width="159" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell><mxCell id="service_servicessystem.drawio_206" parent="service_servicessystem.drawio_188" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontSize=12;" value="int" vertex="1">
+          <mxGeometry height="40" width="155" x="159" as="geometry">
+            <mxRectangle height="40" width="155" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell><mxCell id="service_servicessystem.drawio_207" parent="service_servicessystem.drawio_188" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontSize=12;" value="" vertex="1">
+          <mxGeometry height="40" width="158" x="314" as="geometry">
+            <mxRectangle height="40" width="158" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell><mxCell id="service_servicessystem.drawio_208" parent="service_servicessystem.drawio_188" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontSize=12;" vertex="1">
+          <mxGeometry height="40" width="159" x="472" as="geometry">
+            <mxRectangle height="40" width="159" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell><mxCell id="service_servicessystem.drawio_209" parent="service_servicessystem.drawio_188" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontSize=12;" value="&lt;span style=&quot;caret-color: rgb(0, 0, 0); color: rgb(0, 0, 0); font-family: Helvetica; font-size: 12px; font-style: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: center; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(236, 236, 236); text-decoration: none; display: inline !important; float: none;&quot;&gt;h_service&lt;/span&gt;" vertex="1">
+          <mxGeometry height="40" width="159" x="631" as="geometry">
+            <mxRectangle height="40" width="159" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell><mxCell id="service_servicessystem.drawio_210" parent="service_servicessystem.drawio_189" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontSize=12;" value="bkcc_customer" vertex="1">
+          <mxGeometry height="40" width="159" as="geometry">
+            <mxRectangle height="40" width="159" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell><mxCell id="service_servicessystem.drawio_211" parent="service_servicessystem.drawio_189" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontSize=12;" value="&lt;span style=&quot;caret-color: rgb(0, 0, 0); color: rgb(0, 0, 0); font-family: Helvetica; font-size: 12px; font-style: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: center; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(236, 236, 236); text-decoration: none; display: inline !important; float: none;&quot;&gt;varchar&lt;/span&gt;" vertex="1">
+          <mxGeometry height="40" width="155" x="159" as="geometry">
+            <mxRectangle height="40" width="155" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell><mxCell id="service_servicessystem.drawio_212" parent="service_servicessystem.drawio_189" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontSize=12;" value="20" vertex="1">
+          <mxGeometry height="40" width="158" x="314" as="geometry">
+            <mxRectangle height="40" width="158" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell><mxCell id="service_servicessystem.drawio_213" parent="service_servicessystem.drawio_189" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontSize=12;" vertex="1">
+          <mxGeometry height="40" width="159" x="472" as="geometry">
+            <mxRectangle height="40" width="159" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell><mxCell id="service_servicessystem.drawio_214" parent="service_servicessystem.drawio_189" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontSize=12;" value="&lt;font color=&quot;#000000&quot;&gt;&lt;span style=&quot;caret-color: rgb(0, 0, 0);&quot;&gt;h_customer&lt;/span&gt;&lt;/font&gt;" vertex="1">
+          <mxGeometry height="40" width="159" x="631" as="geometry">
+            <mxRectangle height="40" width="159" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell><mxCell id="service_servicessystem.drawio_215" parent="service_servicessystem.drawio_190" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontSize=12;" value="customerid" vertex="1">
+          <mxGeometry height="40" width="159" as="geometry">
+            <mxRectangle height="40" width="159" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell><mxCell id="service_servicessystem.drawio_216" parent="service_servicessystem.drawio_190" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontSize=12;" value="&lt;span style=&quot;caret-color: rgb(0, 0, 0); color: rgb(0, 0, 0); font-family: Helvetica; font-size: 12px; font-style: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: center; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(236, 236, 236); text-decoration: none; display: inline !important; float: none;&quot;&gt;varchar&lt;/span&gt;" vertex="1">
+          <mxGeometry height="40" width="155" x="159" as="geometry">
+            <mxRectangle height="40" width="155" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell><mxCell id="service_servicessystem.drawio_217" parent="service_servicessystem.drawio_190" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontSize=12;" value="100" vertex="1">
+          <mxGeometry height="40" width="158" x="314" as="geometry">
+            <mxRectangle height="40" width="158" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell><mxCell id="service_servicessystem.drawio_218" parent="service_servicessystem.drawio_190" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontSize=12;" vertex="1">
+          <mxGeometry height="40" width="159" x="472" as="geometry">
+            <mxRectangle height="40" width="159" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell><mxCell id="service_servicessystem.drawio_219" parent="service_servicessystem.drawio_190" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontSize=12;" value="&lt;span style=&quot;caret-color: rgb(0, 0, 0); color: rgb(0, 0, 0); font-family: Helvetica; font-size: 12px; font-style: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: center; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(236, 236, 236); text-decoration: none; display: inline !important; float: none;&quot;&gt;h_customer&lt;/span&gt;" vertex="1">
+          <mxGeometry height="40" width="159" x="631" as="geometry">
+            <mxRectangle height="40" width="159" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell><mxCell id="service_servicessystem.drawio_220" parent="service_servicessystem.drawio_191" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontSize=12;" value="bkcc_registration" vertex="1">
+          <mxGeometry height="40" width="159" as="geometry">
+            <mxRectangle height="40" width="159" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell><mxCell id="service_servicessystem.drawio_221" parent="service_servicessystem.drawio_191" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontSize=12;" value="&lt;span style=&quot;caret-color: rgb(0, 0, 0); color: rgb(0, 0, 0); font-family: Helvetica; font-size: 12px; font-style: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: center; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(236, 236, 236); text-decoration: none; display: inline !important; float: none;&quot;&gt;varchar&lt;/span&gt;" vertex="1">
+          <mxGeometry height="40" width="155" x="159" as="geometry">
+            <mxRectangle height="40" width="155" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell><mxCell id="service_servicessystem.drawio_222" parent="service_servicessystem.drawio_191" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontSize=12;" value="20" vertex="1">
+          <mxGeometry height="40" width="158" x="314" as="geometry">
+            <mxRectangle height="40" width="158" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell><mxCell id="service_servicessystem.drawio_223" parent="service_servicessystem.drawio_191" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontSize=12;" vertex="1">
+          <mxGeometry height="40" width="159" x="472" as="geometry">
+            <mxRectangle height="40" width="159" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell><mxCell id="service_servicessystem.drawio_224" parent="service_servicessystem.drawio_191" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontSize=12;" value="h_registration" vertex="1">
+          <mxGeometry height="40" width="159" x="631" as="geometry">
+            <mxRectangle height="40" width="159" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell><mxCell id="service_servicessystem.drawio_225" parent="service_servicessystem.drawio_192" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontSize=12;" value="registration" vertex="1">
+          <mxGeometry height="40" width="159" as="geometry">
+            <mxRectangle height="40" width="159" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell><mxCell id="service_servicessystem.drawio_226" parent="service_servicessystem.drawio_192" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontSize=12;" value="&lt;span style=&quot;caret-color: rgb(0, 0, 0); color: rgb(0, 0, 0); font-family: Helvetica; font-size: 12px; font-style: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: center; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(236, 236, 236); text-decoration: none; display: inline !important; float: none;&quot;&gt;varchar&lt;/span&gt;" vertex="1">
+          <mxGeometry height="40" width="155" x="159" as="geometry">
+            <mxRectangle height="40" width="155" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell><mxCell id="service_servicessystem.drawio_227" parent="service_servicessystem.drawio_192" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontSize=12;" value="6" vertex="1">
+          <mxGeometry height="40" width="158" x="314" as="geometry">
+            <mxRectangle height="40" width="158" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell><mxCell id="service_servicessystem.drawio_228" parent="service_servicessystem.drawio_192" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontSize=12;" vertex="1">
+          <mxGeometry height="40" width="159" x="472" as="geometry">
+            <mxRectangle height="40" width="159" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell><mxCell id="service_servicessystem.drawio_229" parent="service_servicessystem.drawio_192" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontSize=12;" value="&lt;span style=&quot;caret-color: rgb(0, 0, 0); color: rgb(0, 0, 0); font-family: Helvetica; font-size: 12px; font-style: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: center; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(236, 236, 236); text-decoration: none; display: inline !important; float: none;&quot;&gt;h_registration&lt;/span&gt;" vertex="1">
+          <mxGeometry height="40" width="159" x="631" as="geometry">
+            <mxRectangle height="40" width="159" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell><mxCell id="service_servicessystem.drawio_230" parent="service_servicessystem.drawio_193" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontSize=12;" value="serviceprice" vertex="1">
+          <mxGeometry height="40" width="159" as="geometry">
+            <mxRectangle height="40" width="159" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell><mxCell id="service_servicessystem.drawio_231" parent="service_servicessystem.drawio_193" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontSize=12;" value="int" vertex="1">
+          <mxGeometry height="40" width="155" x="159" as="geometry">
+            <mxRectangle height="40" width="155" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell><mxCell id="service_servicessystem.drawio_232" parent="service_servicessystem.drawio_193" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontSize=12;" vertex="1">
+          <mxGeometry height="40" width="158" x="314" as="geometry">
+            <mxRectangle height="40" width="158" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell><mxCell id="service_servicessystem.drawio_233" parent="service_servicessystem.drawio_193" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontSize=12;" vertex="1">
+          <mxGeometry height="40" width="159" x="472" as="geometry">
+            <mxRectangle height="40" width="159" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell><mxCell id="service_servicessystem.drawio_234" parent="service_servicessystem.drawio_193" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontSize=12;fontStyle=0" value="&lt;span style=&quot;caret-color: rgb(0, 0, 0); color: rgb(0, 0, 0); font-family: Helvetica; font-style: normal; font-variant-caps: normal; letter-spacing: normal; orphans: 2; text-align: center; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; text-decoration-line: none; text-decoration-thickness: auto; text-decoration-style: solid;&quot;&gt;s_service_cost_service_servicessystem&lt;/span&gt;" vertex="1">
+          <mxGeometry height="40" width="159" x="631" as="geometry">
+            <mxRectangle height="40" width="159" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell><mxCell id="service_servicessystem.drawio_235" parent="service_servicessystem.drawio_194" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontSize=12;" value="servicedate" vertex="1">
+          <mxGeometry height="40" width="159" as="geometry">
+            <mxRectangle height="40" width="159" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell><mxCell id="service_servicessystem.drawio_236" parent="service_servicessystem.drawio_194" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontSize=12;" value="datetime2" vertex="1">
+          <mxGeometry height="40" width="155" x="159" as="geometry">
+            <mxRectangle height="40" width="155" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell><mxCell id="service_servicessystem.drawio_237" parent="service_servicessystem.drawio_194" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontSize=12;" vertex="1">
+          <mxGeometry height="40" width="158" x="314" as="geometry">
+            <mxRectangle height="40" width="158" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell><mxCell id="service_servicessystem.drawio_238" parent="service_servicessystem.drawio_194" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontSize=12;" vertex="1">
+          <mxGeometry height="40" width="159" x="472" as="geometry">
+            <mxRectangle height="40" width="159" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell><mxCell id="service_servicessystem.drawio_239" parent="service_servicessystem.drawio_194" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontSize=12;fontStyle=0" value="&lt;span style=&quot;caret-color: rgb(0, 0, 0); color: rgb(0, 0, 0); font-family: Helvetica; font-style: normal; font-variant-caps: normal; letter-spacing: normal; orphans: 2; text-align: center; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; text-decoration-line: none; text-decoration-thickness: auto; text-decoration-style: solid;&quot;&gt;s_service_cost_service_servicessystem&lt;/span&gt;" vertex="1">
+          <mxGeometry height="40" width="159" x="631" as="geometry">
+            <mxRectangle height="40" width="159" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell><mxCell id="service_servicessystem.drawio_240" edge="1" parent="1" source="service_servicessystem.drawio_181" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="bre_customer_salessystem_servicessystem.drawio_1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell><mxCell id="service_servicessystem.drawio_241" edge="1" parent="1" source="service_servicessystem.drawio_181" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="service_servicessystem.drawio_176">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell><mxCell id="service_servicessystem.drawio_242" edge="1" parent="1" source="service_servicessystem.drawio_181" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="service_servicessystem.drawio_178">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell></root></mxGraphModel></diagram></mxfile>
