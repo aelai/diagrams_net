@@ -23,6 +23,8 @@ from __future__ import annotations
 import argparse
 import base64
 import dataclasses
+import html
+import json
 import logging
 import re
 import urllib.parse
@@ -696,6 +698,54 @@ def generate_target_metadata(model_filename: str) -> Path:
 
     cells, by_id, children_by_parent = _build_graph_indexes(mx_root)
 
+    # Detect Dependent Child Satellite and Multi-active Satellite template fillColor (optional but preferred).
+    dependent_child_fill: Optional[str] = None
+    multiactive_fill: Optional[str] = None
+    template_path = script_dir / "IRiS_DV_Modelling.xml"
+    if template_path.exists():
+        tpl_txt = template_path.read_text(encoding="utf-8", errors="replace")
+        m = re.search(r"<mxlibrary>(.*)</mxlibrary>", tpl_txt, flags=re.DOTALL)
+        if m:
+            try:
+                arr = json.loads(m.group(1))
+            except Exception:
+                arr = []
+            for item in arr:
+                title = (item.get("title", "") or "").strip().lower()
+                want_dep = title == "dependent child satellite"
+                want_ma = title in ("multiactive satellite", "multi-active satellite", "multi active satellite")
+
+                if not (want_dep or want_ma):
+                    continue
+
+                xml_s = html.unescape(item.get("xml", "") or "")
+                try:
+                    tr = ET.fromstring(xml_s)
+                except Exception:
+                    continue
+                verts = [c for c in tr.findall(".//mxCell") if c.attrib.get("vertex") == "1"]
+                if not verts:
+                    continue
+
+                def area(c):
+                    g = c.find("./mxGeometry")
+                    if g is None:
+                        return 0.0
+                    return float(g.attrib.get("width", "0") or 0) * float(g.attrib.get("height", "0") or 0)
+
+                main = sorted(verts, key=area, reverse=True)[0]
+                fill = _style_kv(main.attrib.get("style", "")).get("fillColor")
+                if not fill:
+                    continue
+
+                if want_dep and dependent_child_fill is None:
+                    dependent_child_fill = fill
+                if want_ma and multiactive_fill is None:
+                    multiactive_fill = fill
+
+                # Stop once we've found both (if both exist in the library)
+                if dependent_child_fill is not None and multiactive_fill is not None:
+                    break
     # Extract the (single) Source table and its columns (incl. in-memory `target` values).
     source_tables = extract_source_tables_from_drawio(drawio_text)
     source_table = source_tables[0] if source_tables else None
@@ -762,6 +812,20 @@ def generate_target_metadata(model_filename: str) -> Path:
         # Satellites already come directly from Source rows filtered by Target == satellite name.
         return ("", "", "")
 
+    # Satellite subtype detection
+    satellite_subtypes: Dict[str, str] = {}  # satellite_name -> subtype
+
+    def _nearest_fill_color(cell_id: str) -> Optional[str]:
+        """Walk upwards from a cell id and return the first non-empty fillColor."""
+        for aid in _walk_ancestors(cell_id):
+            c = by_id.get(aid)
+            if c is None:
+                continue
+            fill = _style_kv(c.attrib.get("style", "")).get("fillColor")
+            if fill:
+                return fill
+        return None
+
     # Identify DV objects by name from any vertex label.
     # We map both the label cell id and its ancestors to the same DV object name/type.
     obj_by_id: Dict[str, Tuple[str, str]] = {}  # cell_id -> (name, type)
@@ -801,6 +865,31 @@ def generate_target_metadata(model_filename: str) -> Path:
         objects[title] = t
         cid = c.attrib.get("id", "")
         if cid:
+            # Subtype detection: Dependent Child Satellite / Multi-active Satellite
+            if t == "Satellite":
+                low_name = title.lower()
+                subtype = ""
+
+                # Dependent child satellite
+                if low_name.startswith("s_dc_"):
+                    subtype = "Dependent Child Satellite"
+                else:
+                    fill = _nearest_fill_color(cid)
+                    if dependent_child_fill and fill and fill.lower() == dependent_child_fill.lower():
+                        subtype = "Dependent Child Satellite"
+
+                # Multi-active satellite (only if not already marked as dependent child)
+                if not subtype:
+                    if low_name.startswith("s_ma_"):
+                        subtype = "multi active"
+                    else:
+                        fill = _nearest_fill_color(cid)
+                        if multiactive_fill and fill and fill.lower() == multiactive_fill.lower():
+                            subtype = "multi active"
+
+                if subtype:
+                    satellite_subtypes[title] = subtype
+
             for aid in _walk_ancestors(cid):
                 a_cell = by_id.get(aid)
                 if a_cell is None:
@@ -814,6 +903,10 @@ def generate_target_metadata(model_filename: str) -> Path:
     # Precompute Source Extract Date annotations by Satellite.
     # The annotation cell can be a sibling of the name label, so resolve ownership via `obj_by_id` + ancestor walk.
     sed_cols_by_sat: Dict[str, set] = {}
+
+    # Precompute Dependent Child Attribute annotations by Satellite.
+    # Expected label example in the diagram: 'Dependent_Child_Attribute: <column_name>'
+    depchild_cols_by_sat: Dict[str, set] = {}
 
     def _resolve_obj_for_cell(cell_id: str) -> Optional[Tuple[str, str]]:
         if not cell_id:
@@ -858,28 +951,32 @@ def generate_target_metadata(model_filename: str) -> Path:
 
         for line in [ln.strip() for ln in txt.splitlines() if ln.strip()]:
             norm = re.sub(r"[_\s]+", " ", line).strip().lower()
-            if not norm.startswith("source extract date"):
+
+            # -------- Source Extract Date --------
+            if norm.startswith("source extract date"):
+                m = re.match(r"^source[_\s]*extract[_\s]*date\s*[:=]\s*(.+)$", line, flags=re.IGNORECASE)
+                col = m.group(1).strip() if m else ""
+                if not col:
+                    col = re.sub(r"^source[_\s]*extract[_\s]*date\s*", "", line, flags=re.IGNORECASE).strip()
+                col = re.sub(r"\s+", " ", col).strip()
+                if col:
+                    obj = _resolve_obj_for_cell(cid)
+                    if obj and obj[1] == "Satellite":
+                        sed_cols_by_sat.setdefault(obj[0], set()).add(col.strip().lower())
                 continue
 
-            # Prefer parsing after ':' or '='
-            m = re.match(r"^source[_\s]*extract[_\s]*date\s*[:=]\s*(.+)$", line, flags=re.IGNORECASE)
-            col = m.group(1).strip() if m else ""
-            if not col:
-                # Fallback: anything after the phrase
-                col = re.sub(r"^source[_\s]*extract[_\s]*date\s*", "", line, flags=re.IGNORECASE).strip()
-
-            col = re.sub(r"\s+", " ", col).strip()
-            if not col:
+            # -------- Dependent Child Attribute --------
+            if norm.startswith("dependent child attribute"):
+                m = re.match(r"^dependent[_\s]*child[_\s]*attribute\s*[:=]\s*(.+)$", line, flags=re.IGNORECASE)
+                col = m.group(1).strip() if m else ""
+                if not col:
+                    col = re.sub(r"^dependent[_\s]*child[_\s]*attribute\s*", "", line, flags=re.IGNORECASE).strip()
+                col = re.sub(r"\s+", " ", col).strip()
+                if col:
+                    obj = _resolve_obj_for_cell(cid)
+                    if obj and obj[1] == "Satellite":
+                        depchild_cols_by_sat.setdefault(obj[0], set()).add(col.strip().lower())
                 continue
-
-            obj = _resolve_obj_for_cell(cid)
-            if not obj:
-                continue
-            obj_name, obj_type = obj
-            if obj_type != "Satellite":
-                continue
-
-            sed_cols_by_sat.setdefault(obj_name, set()).add(col.strip().lower())
 
     # Resolve edges to Link-Hub and Satellite-Parent using ancestor-walk mapping.
     link_to_hubs: Dict[str, List[Tuple[str, str]]] = {}  # link_name -> [(hub_name, label)]
@@ -1046,9 +1143,11 @@ def generate_target_metadata(model_filename: str) -> Path:
     # Satellites
     for nm in sorted([n for n, t in objects.items() if t == "Satellite"]):
         parent = sat_to_parent.get(nm, "")
+        subtype = satellite_subtypes.get(nm, "")
 
         # Columns referenced by the 'Source Extract Date' annotation inside the satellite shape.
         sed_cols_l = sed_cols_by_sat.get(nm, set())
+        depchild_cols_l = depchild_cols_by_sat.get(nm, set())
 
         # Your rule: satellite attributes are all source attributes WHERE source.Target == satellite name.
         sat_cols: List[SourceColumn] = []
@@ -1056,12 +1155,28 @@ def generate_target_metadata(model_filename: str) -> Path:
             sat_cols = [c for c in source_table.columns if (c.target or "").strip() == nm]
 
         for c in sat_cols:
-            col_type = "Source extract date" if (c.column or "").strip().lower() in sed_cols_l else "Changing attribute"
-            target_rows.append(["Satellite", "", nm, c.column, c.datatype, c.size, c.scale, col_type, parent, "", ""])
+            col_l = (c.column or "").strip().lower()
+            if col_l in depchild_cols_l:
+                col_type = "Dependent child key"
+                dt = "varchar"
+                sz = "100"
+                sc = ""
+            elif col_l in sed_cols_l:
+                col_type = "Source extract date"
+                dt = c.datatype
+                sz = c.size
+                sc = c.scale
+            else:
+                col_type = "Changing attribute"
+                dt = c.datatype
+                sz = c.size
+                sc = c.scale
+
+            target_rows.append(["Satellite", subtype, nm, c.column, dt, sz, sc, col_type, parent, "", ""])
 
         # If none matched, still include a placeholder row so the sat exists.
         if not sat_cols:
-            target_rows.append(["Satellite", "", nm, "", "", "", "", "Changing attribute", parent, "", ""])
+            target_rows.append(["Satellite", subtype, nm, "", "", "", "", "Changing attribute", parent, "", ""])
 
     write_target_xlsx(target_rows, out_file)
     return out_file
